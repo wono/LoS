@@ -1,0 +1,16 @@
+
+
+public class Room {
+	
+	String name;
+	String description;
+	
+	Room east, west, north, south, up, down;
+	
+	
+	public Room(String name, String desc) {
+		
+		
+	}
+	
+}

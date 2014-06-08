@@ -1,0 +1,20 @@
+
+
+public class Room {
+	
+	String name;
+	String description;
+	
+	public Room east, west, north, south, up, down;
+	
+	
+	public Room(String name, String desc) {
+		
+		this.name = name;
+		this.description = desc;
+	}
+	
+	
+	public
+	
+}

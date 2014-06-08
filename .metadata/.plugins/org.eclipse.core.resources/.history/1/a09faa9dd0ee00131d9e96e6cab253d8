@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Launcher {
+
+	public static final String version = ".01";
+
+	public static Scanner scan = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		outln("Welcome to Legend of Silence v" + version);
+		out("What is thy name, Hero?");
+		
+		String name = scan.nextLine();
+		outln("Thy name be " + name);
+	}
+
+	private static void outln(String output) {
+		System.out.println(output);
+
+	}
+
+	public static void out(String output) {
+
+		System.out.print(output);
+
+	}
+
+}

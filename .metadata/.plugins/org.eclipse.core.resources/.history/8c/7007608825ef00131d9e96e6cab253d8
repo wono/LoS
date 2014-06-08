@@ -56,7 +56,6 @@ public class Room {
 		return roomDesc;
 	}
 	
-	
 	public String toString() {
 	
 		return name;

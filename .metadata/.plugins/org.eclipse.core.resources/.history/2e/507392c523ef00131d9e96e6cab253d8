@@ -48,9 +48,7 @@ public class Launcher {
 					case 'w':
 						go(currentRoom.west);
 						break;
-					default:
-						outln("I'm afraid I do not understand that command");
-						
+				
 				}
 			} else {
 				// fight!
@@ -87,12 +85,12 @@ public class Launcher {
 	
 		Room r1 = new Room("Start", "You are in a large courtyard enclosed by grey stone walls engulfed in rose bushes."
 									+ " A forboding castle looms in front of you."
-									+ " A lonely door blocks your path north.", 0);
+									+ " A lonely door blocks your path north.");
 		r1.eventFirstTime = "The gate clatters shut behind.";
-		Room r2 = new Room("r2", "Can go south, north and east.", .9f);
-		Room r3 = new Room("r3", "Can go west and north.", .5f);
-		Room r4 = new Room("r4", "Can go south and west.", .25f);
-		Room r5 = new Room("r5", "Can go south and east.", .5f);
+		Room r2 = new Room("r2", "Can go south, north and east.");
+		Room r3 = new Room("r3", "Can go west and north.");
+		Room r4 = new Room("r4", "Can go south and west.");
+		Room r5 = new Room("r5", "Can go south and east.");
 		
 		r1.north = r2;
 		

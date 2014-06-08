@@ -40,22 +40,21 @@ public class Room {
 	 * they should display here. */
 	public String describe() {
 	
-		String roomDesc = "";
-		
+		String roomDesc = ""
+				;
 		if (firstTime && eventFirstTime != null) {
 			firstTime = false;
-			roomDesc = roomDesc.concat(eventFirstTime);
+			roomDesc.concat(eventFirstTime);
+			
 		}
 		
-		roomDesc = roomDesc.concat("\n" + description);
-		
-		if (monster != null)
-			roomDesc = roomDesc.concat("\nThere is a monster here!");
+		roomDesc.concat("\n" + description);
+			if (monster != null)
+				roomDesc.concat("\nThere is a monster here!");
 		
 		
 		return roomDesc;
 	}
-	
 	
 	public String toString() {
 	

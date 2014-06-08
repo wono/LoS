@@ -24,7 +24,6 @@ public class Room {
 	
 	Random			numGen		= new Random();
 	
-	
 	public Room(String name, String desc, float monsterChance) {
 	
 		this.name = name;
@@ -40,22 +39,12 @@ public class Room {
 	 * they should display here. */
 	public String describe() {
 	
-		String roomDesc = "";
-		
 		if (firstTime && eventFirstTime != null) {
 			firstTime = false;
-			roomDesc = roomDesc.concat(eventFirstTime);
-		}
-		
-		roomDesc = roomDesc.concat("\n" + description);
-		
-		if (monster != null)
-			roomDesc = roomDesc.concat("\nThere is a monster here!");
-		
-		
-		return roomDesc;
+			return eventFirstTime + "\n" + description;
+		} else
+			return description;
 	}
-	
 	
 	public String toString() {
 	

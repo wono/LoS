@@ -1,13 +1,12 @@
-################################################
-#   README : LEAGUE OF SILENCE
-#                                                                  #
-#      last modified:  2014/06/08                                  #
-#      first wrote:    2014/06/08                                  #
-#                                                                  #
-#      TheDizzler  < tgillon.music@gmail.com >                     #
-#      wono        < wono@live.com >                               #
-#                                                                  #
-####################################################################
+===============================
+  README : LEAGUE OF SILENCE
+===============================
+
+*   last modified:  2014/06/08
+*   first wrote:    2014/06/08
+
+**  TheDizzler  < tgillon.music@gmail.com >
+**  wono        < wono@live.com > 
 
 League Of Silence is a simple RPG game for command line interface. 
 This is piliot version and experiment by two junior programmers to 

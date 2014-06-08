@@ -58,21 +58,14 @@ public class Launcher {
 				}
 			} else {
 				// fight!
-				out("Thou art in combat!");
+				out("You are in combat!");
 				out("What is thy command?");
 				char command = scan.nextLine().charAt(0);
 				
 				switch (command) {
-					case 'a': //attack
-						break;
-					case 'r': //run
-						break;
-						
 					default:
-						outln("There is little time for that!");
+						outln("I'm afraid I do not understand that command");
 				}
-				
-				// monster.attack()
 			}
 		}
 	}

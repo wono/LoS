@@ -49,36 +49,17 @@ public class Room {
 		
 		roomDesc = roomDesc.concat("\n" + description);
 		
+		if (monster != null)
+			roomDesc = roomDesc.concat("\nThere is a monster here!");
+		
 		
 		return roomDesc;
 	}
 	
 	
-	public String checkForMonster() {
-		
-		
-		if (monster != null)
-			return "There is a monster here!";
-		
-		return null;
-	}
-	
-	
-	public String passable(Room direction) {
-		
-		
-		if (monster != null)
-			return "The monster blocks your path!";
-		
-		return "clear";
-	}
-	
 	public String toString() {
 	
 		return name;
 	}
-
-
-	
 	
 }

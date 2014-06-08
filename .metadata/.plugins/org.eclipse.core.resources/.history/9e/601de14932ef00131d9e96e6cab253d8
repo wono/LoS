@@ -58,7 +58,7 @@ public class Launcher {
 				}
 			} else {
 				// fight!
-				out("Thou art in combat!");
+				out("You are in combat!");
 				out("What is thy command?");
 				char command = scan.nextLine().charAt(0);
 				

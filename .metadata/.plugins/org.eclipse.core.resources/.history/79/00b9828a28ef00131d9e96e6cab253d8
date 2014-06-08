@@ -56,11 +56,12 @@ public class Room {
 	
 	public String checkForMonster() {
 		
+		String monsCheck = "";
 		
 		if (monster != null)
-			return "There is a monster here!";
+			monsCheck = monsCheck.concat("\nThere is a monster here!");
 		
-		return null;
+		return monsCheck;
 	}
 	
 	

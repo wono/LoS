@@ -49,18 +49,11 @@ public class Room {
 		
 		roomDesc = roomDesc.concat("\n" + description);
 		
+		if (monster != null)
+			roomDesc = roomDesc.concat("\nThere is a monster here!");
+		
 		
 		return roomDesc;
-	}
-	
-	
-	public String checkForMonster() {
-		
-		
-		if (monster != null)
-			return "There is a monster here!";
-		
-		return null;
 	}
 	
 	
@@ -77,8 +70,5 @@ public class Room {
 	
 		return name;
 	}
-
-
-	
 	
 }

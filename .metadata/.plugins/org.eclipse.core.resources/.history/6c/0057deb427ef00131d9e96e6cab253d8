@@ -15,26 +15,21 @@ public class Launcher {
 	
 	public static void main(String[] args) {
 	
-		out("Welcome to Legend of Silence v" + version);
+		outln("Welcome to Legend of Silence v" + version);
 		
 		// setup hero
 		// new Hero()
 		out("What is thy name, Hero? ");
 		
 		String name = scan.nextLine();
-		outln("Thy name be " + name + ". How thou art strong!\n");
+		outln("Thy name be " + name + ". How thou art strong!");
 		
 		// setup dungeon
 		testDungeon();
 		
 		while (true) {
-			outln("You are in " + currentRoom + ".");
-			outln(currentRoom.describe());
-			String checkMonster = currentRoom.checkForMonster();
-			if (checkMonster != null) {
-				combat = true;
-				outln(checkMonster);
-			}
+			outln("You are in " + currentRoom + ".\n" + currentRoom.describe());
+			
 			
 			if (!combat) {
 				
@@ -42,67 +37,40 @@ public class Launcher {
 				char command = scan.nextLine().charAt(0);
 				switch (command) {
 					case 'n':
-						go(currentRoom.north);
+						go(currentRoom.go(currentRoom.north));
 						break;
 					case 's':
-						go(currentRoom.south);
+						go(currentRoom.go(currentRoom.south));
 						break;
 					case 'e':
-						go(currentRoom.east);
+						go(currentRoom.go(currentRoom.east));
 						break;
 					case 'w':
-						go(currentRoom.west);
+						go(currentRoom.go(currentRoom.west));
 						break;
 					default:
 						outln("I'm afraid I do not understand that command");
+						
 				}
 			} else {
 				// fight!
-				out("Thou art in combat!");
-				out("What is thy command?");
-				char command = scan.nextLine().charAt(0);
-				
-				switch (command) {
-					case 'a': //attack
-						break;
-					case 'r': //run
-						break;
-						
-					default:
-						outln("There is little time for that!");
-				}
-				
-				// monster.attack()
 			}
+			
 		}
 	}
 	
-	
-	private static void go(Room direction) {
-	
-		if (direction == null)
-			outln("You cannot go that way.");
-		else {
-			String attempt = currentRoom.passable(direction);
-			if (attempt.equals("clear"))
-				currentRoom = direction;
-			else
-				outln(attempt);
-		}
-		
-	}
 	
 	/** Convenience method for printing to terminal with a new line. */
 	private static void outln(String output) {
 	
-		System.out.println(output);
+		System.out.println(output + "\n");
 		
 	}
 	
 	/** Convenience method for printing to terminal. */
 	public static void out(String output) {
 	
-		System.out.print("\n" + output);
+		System.out.print(output);
 		
 	}
 	
@@ -110,9 +78,9 @@ public class Launcher {
 	public static void testDungeon() {
 	
 		Room r1 = new Room("Start", "You are in a large courtyard enclosed by grey stone walls engulfed in rose bushes."
-									+ "\nA forboding castle looms in front of you."
+									+ " A forboding castle looms in front of you."
 									+ " A lonely door blocks your path north.", 0);
-		r1.eventFirstTime = "The gate clatters shut behind you.";
+		r1.eventFirstTime = "The gate clatters shut behind.";
 		Room r2 = new Room("r2", "Can go south, north and east.", .9f);
 		Room r3 = new Room("r3", "Can go west and north.", .5f);
 		Room r4 = new Room("r4", "Can go south and west.", .25f);

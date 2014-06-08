@@ -54,16 +54,6 @@ public class Room {
 	}
 	
 	
-	public String checkForMonster() {
-		
-		
-		if (monster != null)
-			return "There is a monster here!";
-		
-		return null;
-	}
-	
-	
 	public String passable(Room direction) {
 		
 		
@@ -79,6 +69,13 @@ public class Room {
 	}
 
 
+	public String checkForMonster() {
 	
+		String monsCheck;
+		
+		if (monster != null)
+			monsCheck = monsCheck.concat("\nThere is a monster here!");
+		return monsCheck;
+	}
 	
 }

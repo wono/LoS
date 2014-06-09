@@ -14,21 +14,55 @@ within LOS.
 
 Default package name:   com.lgndofslnc.src.monsters
 
+
 =========================
   Source File Structure
 =========================
 
 Monster.abst.java 
 ----------------- 
-    :   abstract classe, prototype of each monster.
+    Abstract classe, prototype of each monster.
 
-
+TypeMonster.enum.java
+---------------------
+    Enumuration class, representing type of monsters.
+    
+    Available types for now:
+            1.  Animal
+            2.  Human
+            
 Monster Type A: Animals
 -----------------------
-    :   animal type of monsters.
-        physical directory name is Animals.
+    Animal type monsters. Physical directory name is Animals.
+    
+    File paths are:
+        
+        /Animals
+            /GiantDuck.java
+            /SquirrelGold.java
 
-/Animals
-    /GiantDuck.java
-    /SquirrelBlack.java
-    /SquirrelGold.java
+Monster Type B: Humans
+---------------------
+    Human type monsters. Physical directory name is Humans.
+    
+    File paths are:
+        
+        /Humans
+            /GunMan.java
+            /KnifeMan.java
+            
+            
+========================
+  Code Level Structure
+========================
+
+// wono: let's keep simple for now! ;)
+
+Monster Prototype : Abstract Monster
+------------------------------------
+    name
+    type
+    hp
+    attack      ()
+    describe    ()
+    

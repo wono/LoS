@@ -1,5 +1,8 @@
 import java.util.Random;
 
+import Monsters.Monster;
+import Monsters.TestMonster;
+
 /**
  * Room interaction flow:
  * 	Enter room
@@ -32,7 +35,7 @@ public class Room {
 		
 		// Random monster
 		if (numGen.nextFloat() < monsterChance)
-			monster = new Monster();
+			monster = new TestMonster();
 	}
 	
 	
@@ -67,8 +70,8 @@ public class Room {
 	public String passable(Room direction) {
 		
 		
-		if (monster != null)
-			return "The monster blocks your path!";
+//		if (monster != null)
+//			return "The monster blocks your path!";
 		
 		return "clear";
 	}

@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Branch testing
+ * @author T-Dawg
+ *
+ */
 public class Launcher {
 	
 	public static final String		version	= ".01";

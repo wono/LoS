@@ -1,0 +1,34 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  OUTLINE : MONSTERS
+ *                                                                  *
+ *      last modified:  2014/06/08                                  *
+ *      first wrote:    2014/06/08                                  *
+ *                                                                  *
+ *      TheDizzler  < tgillon.music@gmail.com >                     *
+ *      wono        < wonho@live.com >                              *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+Monsters directory is a set of classes that reprenting every monsters 
+within LOS.
+
+Default package name:   com.lgndofslnc.src.monsters
+
+=========================
+  Source File Structure
+=========================
+
+Monster.abst.java 
+----------------- 
+    :   abstract classe, prototype of each monster.
+
+
+Monster Type A: Animals
+-----------------------
+    :   animal type of monsters.
+        physical directory name is Animals.
+
+/Animals
+    /GiantDuck.java
+    /SquirrelBlack.java
+    /SquirrelGold.java

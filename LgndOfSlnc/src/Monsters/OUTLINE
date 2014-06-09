@@ -26,15 +26,18 @@ Monster.abst.java
 TypeMonster.enum.java
 ---------------------
     Enumuration class, representing type of monsters.
-    
+        
     Available types for now:
-            1.  Animal
-            2.  Human
+        1.  Animal
+        2.  Human
             
 Monster Type A: Animals
 -----------------------
     Animal type monsters. Physical directory name is Animals.
     
+    Package name is:
+        com.lgndofslnc.src.monsters.animals
+        
     File paths are:
         
         /Animals
@@ -44,6 +47,9 @@ Monster Type A: Animals
 Monster Type B: Humans
 ----------------------
     Human type monsters. Physical directory name is Humans.
+
+    Package name is:
+        com.lgndofslnc.src.monsters.humans
     
     File paths are:
         

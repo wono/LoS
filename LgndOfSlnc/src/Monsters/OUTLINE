@@ -9,7 +9,7 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-Monsters directory is a set of classes that reprenting prototype of 
+Monsters directory is a set of classes that reprenting prototype of
 every monster within LOS.
 
 Default package name:   los.lgndofslnc.src.monsters
@@ -59,7 +59,7 @@ Monster Type B: Humans
     
     File paths are:
         /Humans
-            /Animal.abst.java
+            /Human.abst.java
             /GunMan.java
             /KnifeMan.java
             

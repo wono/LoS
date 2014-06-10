@@ -21,6 +21,9 @@ Makefile is provided to test for Unix like operating systems.
 
     On the shell command line type:
     
-    $> make
+        $> make
 
+    It would comile and execute testing file, then delete the 
+    binary files (for cleaning).
+    
 See the Makefile for more details...

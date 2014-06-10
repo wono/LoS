@@ -23,3 +23,4 @@ test:
 
 clean:
 	rm tests_monsters/bin/*
+

@@ -23,7 +23,7 @@ Makefile is provided to test for Unix like operating systems.
     
         $> make
 
-    It would comile and execute testing file, then delete the 
-    binary files (for cleaning).
+    It would comile and execute testing file, then delete the binary 
+    files (for cleaning).
     
 See the Makefile for more details...

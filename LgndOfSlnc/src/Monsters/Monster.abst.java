@@ -10,7 +10,20 @@
 
 package los.lgndofslnc.src.monsters;
 
+/**
+ *  Proto type of every monster in LOS.
+ *
+ *  TypeMonster     is defined in TypeMonster.java.
+ */
 public abstract class Monster {
 
+    protected String        name;
+    protected TypeMonster   type;
+    protected int           hp;
+    protected int           level;
     
+    abstract int attack     ();
+    abstract int describe   ();
+    abstract int die        ();
+
 }

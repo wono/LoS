@@ -1,0 +1,26 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  README : MONSTERS
+ *                                                                  *
+ *      last modified:  2014/06/09                                  *
+ *      first wrote:    2014/06/09                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+All the monsters class file of LoS is located in this directory. 
+
+This module also provides testing files to test every monster objects.
+
+
+===============
+  How To Test
+===============
+    
+Makefile is provided to test for Unix like operating systems.
+
+    On the shell command line type:
+    
+    $> make
+
+See the Makefile for more details...

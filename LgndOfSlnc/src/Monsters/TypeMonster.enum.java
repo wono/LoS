@@ -8,14 +8,14 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package los.lgndofslnc.src.monsters;
+package Monsters;
 
 /**
  *  TypeMonster is used to determine monster type. Monster type may be 
  *  used to design some fun game rules such as different skill effect,
  *  item drops. 
  */
-protected enum TypeMonster {
+enum TypeMonster {
 
     ANIMAL  ( "Animal"  ),
     HUMAN   ( "Human"   );
@@ -27,8 +27,8 @@ protected enum TypeMonster {
         this.monsterType = s;
     }
 
-    @Override
-    String toString ()
+    @Override public
+    String toString()
     {
         return  this.monsterType;
     }

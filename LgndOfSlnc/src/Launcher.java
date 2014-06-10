@@ -1,25 +1,22 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import main.Engine;
 import Chambers.Room;
+import Hero.Hero;
 
 /**
- * The main entrance to the Game.
+ * The main entrance to the prgoram. Setup for playing.
  * @author T-Dawg
- * 
- * This will get merged?
  *
  */
 public class Launcher {
 	
-	public static final String		version	= ".01";
+	public static final String		version	= ".02";
 	public static Scanner			scan	= new Scanner(System.in);
 	
 	public static ArrayList<Room>	dungeon	= new ArrayList<Room>();
-	
-	
-	public static Room				currentRoom;
-	private static boolean			combat	= false;
 	
 	
 	public static void main(String[] args) {
@@ -27,79 +24,21 @@ public class Launcher {
 		out("Welcome to Legend of Silence v" + version);
 		
 		// setup hero
-		// new Hero()
+		Hero hero;
 		out("What is thy name, Hero? ");
 		
-		String name = scan.nextLine();
-		outln("Thy name be " + name + ". How thou art strong!\n");
+		hero = new Hero(scan.nextLine());
+		outln("Thy name be " + hero.name + ". How thou art " + hero.mainAttribute() + "!\n");
 		
 		// setup dungeon
 		testDungeon();
 		
-		while (true) {
-			outln("You are in " + currentRoom + ".");
-			outln(currentRoom.describe());
-			String checkMonster = currentRoom.checkForMonster();
-			if (checkMonster != null) {
-				combat = true;
-				outln(checkMonster);
-			}
-			
-			if (!combat) {
-				
-				outln("What is thy command?");
-				char command = scan.nextLine().charAt(0);
-				switch (command) {
-					case 'n':
-						go(currentRoom.north);
-						break;
-					case 's':
-						go(currentRoom.south);
-						break;
-					case 'e':
-						go(currentRoom.east);
-						break;
-					case 'w':
-						go(currentRoom.west);
-						break;
-					default:
-						outln("I'm afraid I do not understand that command");
-				}
-			} else {
-				// fight!
-				out("Thou art in combat!");
-				out("What is thy command?");
-				char command = scan.nextLine().charAt(0);
-				
-				switch (command) {
-					case 'a': //attack
-						break;
-					case 'r': //run
-						break;
-						
-					default:
-						outln("There is little time for that!");
-				}
-				
-				// monster.attack()
-			}
-		}
-	}
-	
-	
-	private static void go(Room direction) {
-	
-		if (direction == null)
-			outln("You cannot go that way.");
-		else {
-			String attempt = currentRoom.passable(direction);
-			if (attempt.equals("clear"))
-				currentRoom = direction;
-			else
-				outln(attempt);
-		}
+		new Engine(scan, dungeon).run();
+		
+		out("Thank you for playing The Legend of Silence");
 		
 	}
+	
 	
 	/** Convenience method for printing to terminal with a new line. */
 	private static void outln(String output) {
@@ -149,6 +88,5 @@ public class Launcher {
 		dungeon.add(r5);
 		
 		
-		currentRoom = r1;
 	}
 }

@@ -1,10 +1,11 @@
 package Chambers;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 import Monsters.Monster;
 import Monsters.TestMonster;
-
+import Objects.*;
 /**
  * Room interaction flow:
  * 	Enter room
@@ -29,6 +30,10 @@ public class Room {
 	public Room		east, west, north, south, up, down;
 //	public Passage	east, west, north, south, up, down;
 	
+	/** All items that can be viewed in a room with a look command. */
+	ArrayList<Interactable> objects = new ArrayList<Interactable>();
+	
+	
 	Monster			monster;
 	
 	Random			numGen		= new Random();
@@ -38,6 +43,7 @@ public class Room {
 	
 		this.name = name;
 		this.description = desc;
+		
 		
 		// Random monster
 		if (numGen.nextFloat() < monsterChance)

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  OUTLINE : MONSTERS
  *                                                                  *
- *      last modified:  2014/06/08                                  *
+ *      last modified:  2014/06/09                                  *
  *      first wrote:    2014/06/08                                  *
  *                                                                  *
  *      TheDizzler  < tgillon.music@gmail.com >                     *
@@ -12,7 +12,7 @@
 Monsters directory is a set of classes that reprenting prototype of 
 every monster within LOS.
 
-Default package name:   com.lgndofslnc.src.monsters
+Default package name:   los.lgndofslnc.src.monsters
 
 
 =========================
@@ -42,11 +42,11 @@ Monster Type A: Animals
     Animal type monsters. Physical directory name is Animals.
     
     Package name is:
-        com.lgndofslnc.src.monsters.animals
+        los.lgndofslnc.src.monsters.animals
         
     File paths are:
-        
         /Animals
+            /Animal.abst.java
             /GiantDuck.java
             /SquirrelGold.java
 
@@ -55,11 +55,11 @@ Monster Type B: Humans
     Human type monsters. Physical directory name is Humans.
 
     Package name is:
-        com.lgndofslnc.src.monsters.humans
+        los.lgndofslnc.src.monsters.humans
     
     File paths are:
-        
         /Humans
+            /Animal.abst.java
             /GunMan.java
             /KnifeMan.java
             
@@ -74,8 +74,8 @@ MonsterInit : Monster Initialization
     Polymorphism. Factory design pattern.
 
 
-Monster Prototype : Abstract Monster
-------------------------------------
+Monster : Abstract Class
+------------------------
     name
     type
     hp

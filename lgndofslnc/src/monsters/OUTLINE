@@ -36,6 +36,12 @@ TypeMonster.enum.java
     Available types for now:
         1.  Animal
         2.  Human
+        
+Interfaces
+----------
+    Self defined interfaces for Monsters module.
+    Maybe 
+    MN
             
 Monster Type A: Animals
 -----------------------
@@ -76,10 +82,8 @@ MonsterInit : Monster Initialization
 
 Monster : Abstract Class
 ------------------------
-    name
-    type
     hp
-    level
+    
     attack      () 
         : returns random damage
     

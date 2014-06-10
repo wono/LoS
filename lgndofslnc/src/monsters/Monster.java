@@ -1,29 +1,28 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ABSTRACT : MONSTER
+ *  MONSTER.ABST_JAVA
  *                                                                  *
- *      last modified:  2014/06/09                                  *
- *      first wrote:    2014/06/09                                  *
+ *      last modified:  2014/06/10                                  *
+ *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package Monsters;
+package monsters;
 
-/**
- *  Proto type of every monster in LOS.
- *
- *  TypeMonster     is defined in TypeMonster.java.
- */
-public abstract class Monster {
+abstract class Monster {
 
-    protected String        name;
-    protected TypeMonster   type;
-    protected int           hp;
-    protected int           level;
+    protected int   hp;
     
-    abstract int attack     ();
-    abstract int describe   ();
-    abstract int die        ();
+    public Monster ()
+    {
+        
+    }
 
+    public int attack  ()
+    {
+        return  new Damage ();
+    }
+    
+    
 }

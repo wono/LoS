@@ -1,4 +1,4 @@
-package Chambers;
+package chambers;
 
 
 public class Door {

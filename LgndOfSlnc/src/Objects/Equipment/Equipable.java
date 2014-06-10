@@ -1,6 +1,6 @@
-package Objects.Equipment;
+package objects.equipment;
 
-import Objects.Pocketable;
+import objects.Pocketable;
 
 /** Items that can be worn. */
 public abstract class Equipable extends Pocketable {

@@ -1,4 +1,4 @@
-package Objects.Equipment;
+package objects.equipment;
 
 /** An abstract weapon class. */
 public abstract class Weapon extends Equipable {

@@ -1,11 +1,13 @@
-package Objects;
+package objects;
+
+import main.Engine;
 
 /** All objects in game that can be interacted with in some fashion.
  * Room objects, pickupable items, equipable items. */
 public abstract class Interactable {
 	
 	public String name;
-	private String description;
+	protected String description;
 	
 	public Interactable(String n, String desc) {
 		
@@ -13,5 +15,8 @@ public abstract class Interactable {
 		description = desc;
 	}
 	
-	public abstract String describe();
+	public void describe() {
+		
+		Engine.outln(description);
+	}
 }

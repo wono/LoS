@@ -1,4 +1,5 @@
-package Monsters;
+package monsters;
+
 
 /**
  * Testity test.

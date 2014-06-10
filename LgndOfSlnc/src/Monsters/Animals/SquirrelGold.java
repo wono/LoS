@@ -1,3 +1,4 @@
+package monsters.animals;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SQUIRRELGOLD
  *                                                                  *

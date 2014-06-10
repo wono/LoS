@@ -1,10 +1,12 @@
 
+import hero.Hero;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import objects.furnishings.Furniture;
+import chambers.Room;
 import main.Engine;
-import Chambers.Room;
-import Hero.Hero;
 
 /**
  * The main entrance to the prgoram. Setup for playing.
@@ -23,13 +25,6 @@ public class Launcher {
 	
 		out("Welcome to Legend of Silence v" + version);
 		
-		// setup hero
-		Hero hero;
-		out("What is thy name, Hero? ");
-		
-		hero = new Hero(scan.nextLine());
-		outln("Thy name be " + hero.name + ". How thou art " + hero.mainAttribute() + "!\n");
-		
 		// setup dungeon
 		testDungeon();
 		
@@ -40,19 +35,13 @@ public class Launcher {
 	}
 	
 	
-	/** Convenience method for printing to terminal with a new line. */
-	private static void outln(String output) {
-	
-		System.out.println(output);
-		
-	}
-	
 	/** Convenience method for printing to terminal. */
 	public static void out(String output) {
 	
 		System.out.print("\n" + output);
 		
 	}
+	
 	
 	
 	public static void testDungeon() {
@@ -87,6 +76,6 @@ public class Launcher {
 		dungeon.add(r4);
 		dungeon.add(r5);
 		
-		
+		r1.objects.add(new Furniture("Desk", "A plain desk with drawers"));
 	}
 }

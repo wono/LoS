@@ -1,9 +1,11 @@
 package main;
 
+import hero.Hero;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Chambers.Room;
+import chambers.Room;
 
 /**
  * The main entrance to the Game.
@@ -21,12 +23,20 @@ public class Engine {
 	public static Room				currentRoom;
 	private static boolean			combat	= false;
 	
+	public static Hero hero;
 	
 	public Engine(Scanner scn, ArrayList<Room> dngn) {
 	
 		scan = scn;
 		dungeon = dngn;
 		currentRoom = dungeon.get(0);
+		
+		
+		// setup hero
+		out("What is thy name, Hero? ");
+		
+		hero = new Hero(scan.nextLine());
+		outln("Thy name be " + hero.name + ". How thou art " + hero.mainAttribute() + "!\n");
 	}
 	
 	
@@ -112,7 +122,7 @@ public class Engine {
 	}
 	
 	/** Convenience method for printing to terminal with a new line. */
-	private static void outln(String output) {
+	public static void outln(String output) {
 	
 		System.out.println(output);
 		

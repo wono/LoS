@@ -1,4 +1,5 @@
-package Objects;
+package objects;
+
 
 /** Objects that can be picked up and "pocketed". */
 public abstract class Pocketable extends Interactable {
@@ -15,16 +16,17 @@ public abstract class Pocketable extends Interactable {
 //		type = typ;
 	}
 	
-	/** What happens when an item is picked up. */
-	public abstract String get();
+	/** Any special action that happens when an item is picked up. */
+	public abstract void get();
 	
-	public abstract String drop();
+	/** Any special action that happens when item is dropped. */
+	public abstract void drop();
 	
 	/** What happens when an item is selected from inventory. */
-	public abstract String use();
+	public abstract void use();
 	
 	/** When item is used on another object. */
-	public abstract String use(Interactable useon);
+	public abstract void use(Interactable useon);
 	
 	
 }

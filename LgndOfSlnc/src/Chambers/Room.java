@@ -1,11 +1,11 @@
-package Chambers;
+package chambers;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import Monsters.Monster;
-import Monsters.TestMonster;
-import Objects.*;
+import objects.*;
+import monsters.Monster;
+import monsters.TestMonster;
 /**
  * Room interaction flow:
  * 	Enter room
@@ -31,7 +31,7 @@ public class Room {
 //	public Passage	east, west, north, south, up, down;
 	
 	/** All items that can be viewed in a room with a look command. */
-	ArrayList<Interactable> objects = new ArrayList<Interactable>();
+	public ArrayList<Interactable> objects = new ArrayList<Interactable>();
 	
 	
 	Monster			monster;

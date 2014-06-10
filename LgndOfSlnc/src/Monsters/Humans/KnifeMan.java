@@ -1,3 +1,4 @@
+package monsters.humans;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : KNIFEMAN
  *                                                                  *

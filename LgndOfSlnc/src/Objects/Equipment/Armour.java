@@ -1,4 +1,4 @@
-package Objects.Equipment;
+package objects.equipment;
 
 
 public abstract class Armour extends Equipable {

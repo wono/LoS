@@ -1,3 +1,4 @@
+package monsters.tests_monsters;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : TESTMONSTERS
  *                                                                  *

@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Chambers.Room;
+
+/**
+ * The main entrance to the Game.
+ * @author T-Dawg
+ * 
+ * This will get merged?
+ *
+ */
 public class Launcher {
 	
 	public static final String		version	= ".01";

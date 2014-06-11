@@ -27,8 +27,8 @@ enum TypeMonster {
         this.monsterType = s;
     }
 
-    @Override public
-    String toString()
+    @Override 
+    public String toString()
     {
         return  this.monsterType;
     }

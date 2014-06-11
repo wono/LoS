@@ -23,7 +23,7 @@ import src.monsters.humans.KnifeMan;
 /**
  * Randomized Monster instance generator. Notice that the generator
  * method is static - no need initilization. Within any class 
- * out here that imported this class, call it like this:  
+ * out here, which imports this class, call it like this:  
  *
  *          Monster m = RandomMonsterGen.GET();
  *

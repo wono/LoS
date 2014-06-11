@@ -17,8 +17,12 @@ import src.monsters.RandomMonsterGen;
 
 /**
  *  Neat, and easy going monster initialization. Within any room, just 
- *  it, then you would get random monster object with their 
- *  description printing out.
+ *  call it like this:
+ *
+ *      new MonsterInit ();
+ *
+ *  You would get random monster object with their description 
+ *  printing out.
  */
 
 public class MonsterInit {

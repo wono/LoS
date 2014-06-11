@@ -1,14 +1,14 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, ENUMERATION : TYPEMONSTER
  *                                                                  *
- *      last modified:  2014/06/09                                  *
+ *      last modified:  2014/06/10                                  *
  *      first wrote:    2014/06/09                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package Monsters;
+package src.monsters;
 
 /**
  *  TypeMonster is used to determine monster type. Monster type may be 
@@ -27,8 +27,8 @@ enum TypeMonster {
         this.monsterType = s;
     }
 
-    @Override public
-    String toString()
+    @Override 
+    public String toString()
     {
         return  this.monsterType;
     }

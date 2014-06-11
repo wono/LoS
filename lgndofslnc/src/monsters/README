@@ -8,22 +8,18 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-All the monsters class file of LoS is located in this directory. 
+All the monsters class file of LoS is located in this directory. This 
+module also provides testing files to test every monster objects. For 
+testing see this file: "LoS/lgndofslnc/README".
 
-This module also provides testing files to test every monster objects.
+Module Dev Progress
+===================
 
-
-===============
-  How To Test
-===============
+    2014/06/10
+        Randomizing Monster instance generation features are added.
     
-Makefile is provided to test for Unix like operating systems.
+    2014/06/09 
+        Desgined structures and file organizaions of this module.
 
-    On the shell command line type:
-    
-        $> make
-
-    It would comile and execute testing file, then delete the binary 
-    files (for cleaning).
-    
-See the Makefile for more details...
+    2014/06/08
+        Start Project. Designed current module.

@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA ABSTRACT : MONSTER
+ *  JAVA : MONSTERINIT
  *                                                                  *
  *      last modified:  2014/06/10                                  *
  *      first wrote:    2014/06/10                                  *
@@ -10,11 +10,22 @@
 
 package src.monsters;
 
-public abstract class Monster {
+import static java.lang.System.out;
 
-    public Monster ()
+import src.monsters.Monster;
+
+/**
+ *  Neat, and easy going monster initialization. Within any room, just 
+ *  it, then you would get random monster object with their 
+ *  description printing out.
+ */
+
+public class MonsterInit {
+
+    public MonsterInit ()
     {
+        Monster m = new RandomMonster();
         
+        m.describe ();
     }
-
 }

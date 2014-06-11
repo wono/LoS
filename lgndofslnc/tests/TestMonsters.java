@@ -10,6 +10,7 @@
 
 package tests;
 
+import java.lang.StackTraceElement;
 import static java.lang.System.out;
 
 import src.monsters.Monster;
@@ -19,12 +20,19 @@ class TestMonsters {
 
     public static void main ( String[] args )
     {
-        out.printf ("TESTING.......Monsters");
-        
-        out.printf ("%s\n", RandomMonsterGen.GET ());
-        out.printf ("%s\n", RandomMonsterGen.GET ());
-        out.printf ("%s\n", RandomMonsterGen.GET ());
-        out.printf ("%s\n", RandomMonsterGen.GET ());
-        out.printf ("%s\n", RandomMonsterGen.GET ());
+        out.printf ("======================\n");
+        out.printf ("TESTING.......Monsters\n");
+        out.printf ("======================\n");
+
+        test_random_monster ();
     }
+
+    private static void test_random_monster ()
+    {
+        int i = 0;
+        while ( i++ < 32 )
+            out.printf ("TESTING......test_random_monster:\t%s\n", 
+                RandomMonsterGen.GET());
+    }        
+
 }

@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  README : MONSTERS
+ *  JAVA, ENUMERATION : TYPEMONSTER
  *                                                                  *
  *      last modified:  2014/06/09                                  *
  *      first wrote:    2014/06/09                                  *
@@ -8,22 +8,28 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-All the monsters class file of LoS is located in this directory. 
+package Monsters;
 
-This module also provides testing files to test every monster objects.
+/**
+ *  TypeMonster is used to determine monster type. Monster type may be 
+ *  used to design some fun game rules such as different skill effect,
+ *  item drops. 
+ */
+enum TypeMonster {
 
-
-===============
-  How To Test
-===============
+    ANIMAL  ( "Animal"  ),
+    HUMAN   ( "Human"   );
     
-Makefile is provided to test for Unix like operating systems.
-
-    On the shell command line type:
+    private String monsterType;
     
-        $> make
+    private TypeMonster ( String s )
+    {
+        this.monsterType = s;
+    }
 
-    It would comile and execute testing file, then delete the binary 
-    files (for cleaning).
-    
-See the Makefile for more details...
+    @Override public
+    String toString()
+    {
+        return  this.monsterType;
+    }
+}

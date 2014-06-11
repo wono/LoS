@@ -16,10 +16,12 @@ public class Knife extends Weapon {
 
 	@Override public void drop() {
 	
-		Engine.outln("The " + name + " hits the ground with a clink.");
+		Engine.outln("The " + name + " hits the ground with a high-pitched clang.");
 	}
 
 	@Override public void use() {
+		
+		Engine.outln("Planning to off yourself already? There is so much to live for!");
 
 	}
 

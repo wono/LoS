@@ -24,6 +24,7 @@ public class Inventory extends ArrayList<Pocketable> {
 			this.add(item);
 			Engine.outln("You pick up the " + item + " and put it"
 							+ "in your pack");
+			item.get();
 		}
 	}
 	
@@ -31,6 +32,7 @@ public class Inventory extends ArrayList<Pocketable> {
 	public void drop(Pocketable item) {
 	
 		this.remove(item);
+		item.drop();
 	}
 	
 	/** Display inventory. */

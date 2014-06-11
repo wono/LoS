@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ABSTRACT : MONSTER
+ *  JAVA, ENUMERATION : TYPEMONSTER
  *                                                                  *
  *      last modified:  2014/06/09                                  *
  *      first wrote:    2014/06/09                                  *
@@ -11,19 +11,25 @@
 package monsters;
 
 /**
- *  Proto type of every monster in LOS.
- *
- *  TypeMonster     is defined in TypeMonster.java.
+ *  TypeMonster is used to determine monster type. Monster type may be 
+ *  used to design some fun game rules such as different skill effect,
+ *  item drops. 
  */
-public abstract class Monster {
+enum TypeMonster {
 
-    protected String        name;
-    protected TypeMonster   type;
-    protected int           hp;
-    protected int           level;
+    ANIMAL  ( "Animal"  ),
+    HUMAN   ( "Human"   );
     
-    abstract int attack     ();
-    abstract int describe   ();
-    abstract int die        ();
+    private String monsterType;
+    
+    private TypeMonster ( String s )
+    {
+        this.monsterType = s;
+    }
 
+    @Override public
+    String toString()
+    {
+        return  this.monsterType;
+    }
 }

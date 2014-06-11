@@ -21,9 +21,13 @@ import src.monsters.humans.GunMan;
 import src.monsters.humans.KnifeMan;
 
 /**
- *  Randomized Monster instance generator. Use this like this:
- *      
- */
+ * Randomized Monster instance generator. Notice that the generator
+ * method is static - no need initilization. Within any class 
+ * out here that imported this class, call it like this:  
+ *
+ *          Monster m = RandomMonsterGen.GET();
+ *
+ */ 
 public class RandomMonsterGen implements MonsterIndex {
     
     private static int rnGen ()

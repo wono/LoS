@@ -1,0 +1,25 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  README : MONSTERS
+ *                                                                  *
+ *      last modified:  2014/06/09                                  *
+ *      first wrote:    2014/06/09                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+All the monsters class file of LoS is located in this directory. This 
+module also provides testing files to test every monster objects. For 
+testing see this file: "LoS/lgndofslnc/README".
+
+Module Dev Progress
+===================
+
+    2014/06/10
+        Randomizing Monster instance generation features are added.
+    
+    2014/06/09 
+        Desgined structures and file organizaions of this module.
+
+    2014/06/08
+        Start Project. Designed current module.

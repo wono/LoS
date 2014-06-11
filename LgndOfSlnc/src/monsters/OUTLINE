@@ -1,0 +1,94 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  OUTLINE : MONSTERS
+ *                                                                  *
+ *      last modified:  2014/06/09                                  *
+ *      first wrote:    2014/06/08                                  *
+ *                                                                  *
+ *      TheDizzler  < tgillon.music@gmail.com >                     *
+ *      wono        < wonho@live.com >                              *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+Monsters directory is a set of classes that reprenting prototype of
+every monster within LOS.
+
+Default package name:   los.lgndofslnc.src.monsters
+
+
+=========================
+  Source File Structure
+=========================
+
+Monster.abst.java 
+----------------- 
+    Abstract class, prototype of each monster.
+
+MonsterInit.java
+----------------
+    Class for initializing any monster. For now, random type of 
+    monster is generated. Later some intersting rules with algorithms 
+    on generating monster will be added.
+
+TypeMonster.enum.java
+---------------------
+    Enumeration class, representing type of monsters.
+        
+    Available types for now:
+        1.  Animal
+        2.  Human
+        
+Interfaces
+----------
+    Self defined interfaces for Monsters module.
+    Maybe 
+    MN
+            
+Monster Type A: Animals
+-----------------------
+    Animal type monsters. Physical directory name is Animals.
+    
+    Package name is:
+        los.lgndofslnc.src.monsters.animals
+        
+    File paths are:
+        /Animals
+            /Animal.abst.java
+            /GiantDuck.java
+            /SquirrelGold.java
+
+Monster Type B: Humans
+----------------------
+    Human type monsters. Physical directory name is Humans.
+
+    Package name is:
+        los.lgndofslnc.src.monsters.humans
+    
+    File paths are:
+        /Humans
+            /Human.abst.java
+            /GunMan.java
+            /KnifeMan.java
+            
+            
+===================
+  Class Structure
+===================
+
+MonsterInit : Monster Initialization
+------------------------------------
+    Randomly generates monster instance.
+    Polymorphism. Factory design pattern.
+
+
+Monster : Abstract Class
+------------------------
+    hp
+    
+    attack      () 
+        : returns random damage
+    
+    describe    ()
+        : prints it's description
+        
+    die         ()
+        : returns exp for now, later may be fixed to give item

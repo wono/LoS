@@ -1,22 +1,16 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  README : MONSTERS
+ *  README : LOS TESTING
  *                                                                  *
- *      last modified:  2014/06/09                                  *
- *      first wrote:    2014/06/09                                  *
+ *      last modified:  2014/06/10                                  *
+ *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-All the monsters class file of LoS is located in this directory. 
+Testing with Makefile
+=====================
 
-This module also provides testing files to test every monster objects.
-
-
-===============
-  How To Test
-===============
-    
 Makefile is provided to test for Unix like operating systems.
 
     On the shell command line type:
@@ -27,5 +21,15 @@ Makefile is provided to test for Unix like operating systems.
     files (for cleaning).
     
 See the Makefile for more details. 
-Makefile is currently located in here ==> LoS/lgndofslnc/
 
+
+Available Testing Module For Now
+================================
+
+Module 1 - Monsters
+-------------------
+    Fundamental sturture & file organization testing is provided. 
+    Testing for Randomizing Monster instance initialization feature is 
+    also provided. See the "tests/TestMonsters.java" file for more 
+    details.
+        

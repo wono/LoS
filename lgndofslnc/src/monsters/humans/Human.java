@@ -8,11 +8,16 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters.humans;
+package monsters.humans;
 
-import src.monsters.Monster;
+import monsters.Monster;
 
 public abstract class Human extends Monster {
+
+	public Human(String desc) {
+	
+		super(desc);
+	}
 
 
 }

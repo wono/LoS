@@ -8,17 +8,17 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters;
+package monsters;
 
 import java.util.Random;
 
-import src.monsters.interfaces.MonsterIndex;
+import monsters.interfaces.MonsterIndex;
 
-import src.monsters.animals.GiantDuck;
-import src.monsters.animals.SquirrelGold;
+import monsters.animals.GiantDuck;
+import monsters.animals.SquirrelGold;
 
-import src.monsters.humans.GunMan;
-import src.monsters.humans.KnifeMan;
+import monsters.humans.GunMan;
+import monsters.humans.KnifeMan;
 
 /**
  * Randomized Monster instance generator. Notice that the generator

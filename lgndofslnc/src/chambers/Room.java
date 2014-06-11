@@ -5,7 +5,7 @@ import java.util.Random;
 
 import objects.*;
 import monsters.Monster;
-import monsters.TestMonster;
+
 /**
  * Room interaction flow:
  * 	Enter room

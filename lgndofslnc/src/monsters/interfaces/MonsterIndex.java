@@ -8,7 +8,7 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters.interfaces;
+package monsters.interfaces;
 
 /**
  *  All the monster index information of LOS are here.

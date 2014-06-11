@@ -8,7 +8,7 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters;
+package monsters;
 
 /**
  *  TypeMonster is used to determine monster type. Monster type may be 

@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ENUMERATION : TYPEMONSTER
+ *  JAVA, ABSTRACT : ANIMAL
  *                                                                  *
  *      last modified:  2014/06/10                                  *
  *      first wrote:    2014/06/09                                  *
@@ -8,28 +8,15 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters;
+package monsters.animals;
 
-/**
- *  TypeMonster is used to determine monster type. Monster type may be 
- *  used to design some fun game rules such as different skill effect,
- *  item drops. 
- */
-enum TypeMonster {
+import monsters.Monster;
 
-    ANIMAL  ( "Animal"  ),
-    HUMAN   ( "Human"   );
-    
-    private String monsterType;
-    
-    private TypeMonster ( String s )
-    {
-        this.monsterType = s;
-    }
+public abstract class Animal extends Monster {
 
-    @Override 
-    public String toString()
-    {
-        return  this.monsterType;
-    }
+	public Animal(String desc) {
+	
+		super(desc);
+	}
+
 }

@@ -9,9 +9,13 @@ package monsters.animals;
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters.animals;
 
 public class GiantDuck extends Animal {
+
+	public GiantDuck() {
+	
+		super("A fearsome beast with a hulking chest and a beak dripping with the blood of it's last victim.");
+	}
 
 
 }

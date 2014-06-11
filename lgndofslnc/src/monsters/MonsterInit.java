@@ -8,12 +8,12 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package src.monsters;
+package monsters;
 
 import static java.lang.System.out;
 
-import src.monsters.Monster;
-import src.monsters.RandomMonsterGen;
+import monsters.Monster;
+import monsters.RandomMonsterGen;
 
 /**
  *  Neat, and easy going monster initialization. Within any room, just 
@@ -31,6 +31,6 @@ public class MonsterInit {
     {
         Monster m = RandomMonsterGen.GET();
         
-        m.describe ();
+        m.describe();
     }
 }

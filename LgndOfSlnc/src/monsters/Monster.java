@@ -1,31 +1,27 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *
-* JAVA ABSTRACT : MONSTER
-* *
-* last modified: 2014/06/10 *
-* first wrote: 2014/06/10 *
-* *
-* wono (wonho lim: wono@live.com) *
-* *
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+ *  JAVA ABSTRACT : MONSTER
+ *                                                                  *
+ *      last modified:  2014/06/11                                  *
+ *      first wrote:    2014/06/10                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 package monsters;
 
-import main.Engine;
-
 public abstract class Monster {
 
-	protected String description;
-	
-	
-    public Monster (String desc)
+    public Monster ()
     {
-        description = desc;
+        
     }
 
-	public void describe() {
-	
-		Engine.outln(description);
-		
+	public void describe () 
+	{
+	    
 	}
+
+    
 
 }

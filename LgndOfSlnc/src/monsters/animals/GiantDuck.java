@@ -1,4 +1,3 @@
-package monsters.animals;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : GIANTDUCK
  *                                                                  *
@@ -9,6 +8,7 @@ package monsters.animals;
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+package monsters.animals;
 
 public class GiantDuck extends Animal {
 

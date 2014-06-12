@@ -1,4 +1,3 @@
-package monsters.humans;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : GUNMAN
  *                                                                  *
@@ -9,6 +8,7 @@ package monsters.humans;
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+package monsters.humans;
 
 public class GunMan extends Human {
 

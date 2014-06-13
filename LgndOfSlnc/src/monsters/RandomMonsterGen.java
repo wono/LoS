@@ -36,9 +36,9 @@ public class RandomMonsterGen implements MonsterIndex {
 	public static Monster GET()
 	{
 		switch ( rnGen() ) {
-			case MI_ANIMAL_GIANT_DUCK:  return new GiantDuck    ();
-			case MI_HUMAN_GUN_MAN:      return new GunMan       ();
-			case MI_HUMAN_KNIFE_MAN:    return new KnifeMan     ();
+			case MTI_ANIMAL_GIANT_DUCK: return new GiantDuck    ();
+			case MTI_HUMAN_GUN_MAN:     return new GunMan       ();
+			case MTI_HUMAN_KNIFE_MAN:   return new KnifeMan     ();
 			default:                    return new SquirrelGold ();
 		}
 	}

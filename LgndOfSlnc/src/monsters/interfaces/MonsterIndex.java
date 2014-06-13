@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, INTERFACE : MONSTERINDEX
+ *  JAVA, INTERFACE : MTINDEXINTERFACE
  *                                                                  *
  *      last modified:  2014/06/10                                  *
  *      first wrote:    2014/06/10                                  *
@@ -17,7 +17,7 @@ package monsters.interfaces;
  *      Animal  type of Monster indices:  0 to 19
  *      Human   type of Monster indices: 20 to 39
  */
-public interface MonsterIndex {
+public interface MTIndexInterface {
     
     // default number of monsters LOS limits currently
     static final int DEFAULT_MONSTER_MAX_COUNT      = 100; 
@@ -29,8 +29,8 @@ public interface MonsterIndex {
     static final int DEFAULT_MONSTER_TYPES_NUMBER   = 2;
     
     // monster indices
-    static final int MI_ANIMAL_GIANT_DUCK       =  0;
-    static final int MI_ANIMAL_SQUIRREL_GOLD    =  1;
-    static final int MI_HUMAN_GUN_MAN           =  2;
-    static final int MI_HUMAN_KNIFE_MAN         =  3;
+    static final int MTI_ANIMAL_GIANT_DUCK       =  0;
+    static final int MTI_ANIMAL_SQUIRREL_GOLD    =  1;
+    static final int MTI_HUMAN_GUN_MAN           =  2;
+    static final int MTI_HUMAN_KNIFE_MAN         =  3;
 }

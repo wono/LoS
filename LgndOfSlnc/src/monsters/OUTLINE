@@ -41,10 +41,10 @@ Interfaces
 ----------
     Self defined interfaces for Monsters module.
     
-    1.  MIndexInterface.java:
+    1.  MTIndexInterface.java:
         Monster index interface
         
-    2.  MDescriptionInterface.java:
+    2.  MTDescriptionInterface.java:
         Monseter description interface
         
 Monster Type A: Animals

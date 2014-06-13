@@ -10,13 +10,8 @@
 
 package monsters.animals;
 
-import monsters.Monster;
+import  monsters.Monster;
 
 public abstract class Animal extends Monster {
-
-	public Animal(String desc) {
-	
-		super(desc);
-	}
 
 }

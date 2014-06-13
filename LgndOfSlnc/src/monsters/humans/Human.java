@@ -14,10 +14,4 @@ import monsters.Monster;
 
 public abstract class Human extends Monster {
 
-	public Human(String desc) {
-	
-		super(desc);
-	}
-
-
 }

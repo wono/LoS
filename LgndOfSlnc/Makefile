@@ -2,7 +2,7 @@
 #   MAKEFILE:
 #       LOS - Monsters module testing program                       #
 #                                                                   #
-#       last modified:  2014/06/09                                  #
+#       last modified:  2014/06/12                                  #
 #       first wrote:    2014/06/09                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -13,11 +13,13 @@ all:
 	make compile && make run && make clean
 
 compile:
-	javac tests/*.java
+	javac tests/*.java -sourcepath src/ -d src/
 	
 run:
-	java tests.TestMonsters
+	cd src/ && java TestMonsters && cd ..
 
 clean:
-	rm tests/*.class
+	rm src/*.class
+	rm src/monsters/*.class
+	rm src/monsters/*/*.class
 

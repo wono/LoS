@@ -1,4 +1,3 @@
-package monsters.animals;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SQUIRRELGOLD
  *                                                                  *
@@ -9,13 +8,8 @@ package monsters.animals;
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+package monsters.animals;
 
 public class SquirrelGold extends Animal {
-
-	public SquirrelGold() {
-	
-		super("A clockwork squirrel plated with pure gold.");
-	}
-
 
 }

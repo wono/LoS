@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  OUTLINE : MONSTERS
  *                                                                  *
- *      last modified:  2014/06/09                                  *
+ *      last modified:  2014/06/12                                  *
  *      first wrote:    2014/06/08                                  *
  *                                                                  *
  *      TheDizzler  < tgillon.music@gmail.com >                     *
@@ -12,15 +12,15 @@
 Monsters directory is a set of classes that reprenting prototype of
 every monster within LOS.
 
-Default package name:   los.lgndofslnc.src.monsters
+Default package name:   monsters
 
 
 =========================
   Source File Structure
 =========================
 
-Monster.abst.java 
------------------ 
+Monster.java 
+------------ 
     Abstract class, prototype of each monster.
 
 MonsterInit.java
@@ -29,8 +29,8 @@ MonsterInit.java
     monster is generated. Later some intersting rules with algorithms 
     on generating monster will be added.
 
-TypeMonster.enum.java
----------------------
+TypeMonster.java
+----------------
     Enumeration class, representing type of monsters.
         
     Available types for now:
@@ -40,19 +40,23 @@ TypeMonster.enum.java
 Interfaces
 ----------
     Self defined interfaces for Monsters module.
-    Maybe 
-    MN
-            
+    
+    1.  MTIndexInterface.java:
+        Monster index interface
+        
+    2.  MTDescriptionInterface.java:
+        Monseter description interface
+        
 Monster Type A: Animals
 -----------------------
     Animal type monsters. Physical directory name is Animals.
     
-    Package name is:
-        los.lgndofslnc.src.monsters.animals
+    Package name:
+        monsters.animals
         
-    File paths are:
-        /Animals
-            /Animal.abst.java
+    File paths:
+        /animals
+            /Animal.java
             /GiantDuck.java
             /SquirrelGold.java
 
@@ -60,35 +64,30 @@ Monster Type B: Humans
 ----------------------
     Human type monsters. Physical directory name is Humans.
 
-    Package name is:
-        los.lgndofslnc.src.monsters.humans
+    Package name:
+        monsters.humans
     
-    File paths are:
+    File paths:
         /Humans
-            /Human.abst.java
+            /Human.java
             /GunMan.java
             /KnifeMan.java
             
             
-===================
-  Class Structure
-===================
+================
+  Main Classes
+================
 
 MonsterInit : Monster Initialization
 ------------------------------------
+    Generates a random monster and describe it.
+    
+RandomMonsterGen : Random Monster Generator
+-------------------------------------------
     Randomly generates monster instance.
-    Polymorphism. Factory design pattern.
-
 
 Monster : Abstract Class
 ------------------------
-    hp
-    
-    attack      () 
-        : returns random damage
-    
     describe    ()
         : prints it's description
-        
-    die         ()
-        : returns exp for now, later may be fixed to give item
+

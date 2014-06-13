@@ -1,4 +1,3 @@
-package monsters.humans;
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : KNIFEMAN
  *                                                                  *
@@ -9,14 +8,9 @@ package monsters.humans;
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+package monsters.humans;
 
 public class KnifeMan extends Human {
-
-	public KnifeMan() {
-	
-		super("A nimble swashbuckler who invites your internal organs to meet his knife.");
-	}
-
 
 
 }

@@ -12,8 +12,4 @@ package monsters.animals;
 
 public class SquirrelGold extends Animal {
 
-	public SquirrelGold() {
-	
-		super("A clockwork squirrel plated with pure gold.");
-	}
 }

@@ -14,9 +14,4 @@ import  monsters.Monster;
 
 public abstract class Animal extends Monster {
 
-	public Animal(String desc) {
-	
-		super(desc);
-	}
-
 }

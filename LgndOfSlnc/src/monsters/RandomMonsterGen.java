@@ -13,10 +13,8 @@ package monsters;
 import java.util.Random;
 
 import monsters.interfaces.MonsterIndex;
-
 import monsters.animals.GiantDuck;
 import monsters.animals.SquirrelGold;
-
 import monsters.humans.GunMan;
 import monsters.humans.KnifeMan;
 
@@ -32,8 +30,7 @@ public class RandomMonsterGen implements MonsterIndex {
 	
 	private static int rnGen()
 	{
-	
-		return new Random().nextInt(DEFAULT_MONSTER_KINDS_NUMBER);
+		return  new Random().nextInt(DEFAULT_MONSTER_KINDS_NUMBER);
 	}
 	
 	public static Monster GET()

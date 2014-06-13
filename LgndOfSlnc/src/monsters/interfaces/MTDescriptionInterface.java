@@ -17,7 +17,7 @@ package monsters.interfaces;
 public interface MTDescriptionInterface {
 
     static final String MTD_ERROR_MESSAGE
-        =   "An error occurs - LOS_ERROR: MS009401." 
+        =   "An error occurs - LOS_ERROR: MS009401.";
 
     static final String MTD_AN_GIANT_DUCK
         =   "A fearsome beast with a hulking chest and a beak " 

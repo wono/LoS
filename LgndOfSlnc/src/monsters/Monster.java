@@ -16,7 +16,7 @@ public abstract class Monster {
 
 	public void describe () 
 	{
-        out.printf ( "%s\n", MTDescription.GET ( this );
+        out.printf ( "%s\n", MTDescription.GET ( this ) );
 	}
 
 }

@@ -34,14 +34,14 @@ public class MTDescription implements MTDescriptionInterface {
     private MTDescription () {}
     
     // returns corresponding moster descriptions, or an error message 
-    public static String GET (Monster m)
+    public static String GET ( Monster m )
     {
-        if ( m instanceof GiantDuck     ) returns MTD_AN_GIANT_DUCK; 
-        if ( m instanceof SquirrelGold  ) returns MTD_AN_SQUIRREL_GOD;
-        if ( m instanceof GunMan        ) returns MTD_HM_GUN_MAN;
-        if ( m instanceof KnifeMan      ) returns MTD_HM_KNIFE_MAN;
+        if ( m instanceof GiantDuck     ) return MTD_AN_GIANT_DUCK; 
+        if ( m instanceof SquirrelGold  ) return MTD_AN_SQUIRREL_GOLD;
+        if ( m instanceof GunMan        ) return MTD_HM_GUN_MAN;
+        if ( m instanceof KnifeMan      ) return MTD_HM_KNIFE_MAN;
         
-        returns MTD_ERROR_MESSAGE;
+        return MTD_ERROR_MESSAGE;
     }
 
 }

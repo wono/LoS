@@ -10,16 +10,13 @@
 
 package monsters;
 
-public abstract class Monster {
+import  static java.lang.System.out;
 
-    public Monster ()
-    {
-        
-    }
+public abstract class Monster {
 
 	public void describe () 
 	{
-	    
+        out.printf ( "%s\n", MTDescription.GET ( this );
 	}
 
 }

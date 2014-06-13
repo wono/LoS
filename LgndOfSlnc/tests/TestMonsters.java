@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : TESTMONSTERS
  *                                                                  *
- *      last modified:  2014/06/12                                  *
+ *      last modified:  2014/06/13                                  *
  *      first wrote:    2014/06/09                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -48,24 +48,29 @@ class TestMonsters {
     
     private static void print_title ( String s )
     {
-        int l   = TEST_PREFIX.length() + s.length();
+        int     l = TEST_PREFIX.length() + s.length();
+        String  d = "";
         
         // halves length to minimize loops
-        l   = 0 == ( TEST_PREFIX.length() + s.length() ) % 2
+        l   = 0 == l % 2 
             ? l / 2 
             : l / 2 + 1;
-                    
-        print_decoration    ( l );
-        out.println         ( title_get (s) ); 
-        print_decoration    ( l );
+        d = decorated_bar_get ( l );
+        
+        out.println ( d );        
+        out.println ( title_get (s) ); 
+        out.println ( d );
     }
     
     /* Prints decorated line */
-    private static void print_decoration ( int repeatTime )
+    private static String decorated_bar_get ( int repeatTime )
     {
-        int i = 0;
-        while ( i++ < repeatTime )  out.print ( TEST_DECORATION );
-        out.println();
+        int     i = 0;
+        String  d = "";
+         
+        while ( i++ < repeatTime )  d += TEST_DECORATION;
+        
+        return d;
     }
     
     /*  Returns title combined */

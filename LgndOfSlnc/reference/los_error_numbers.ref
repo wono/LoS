@@ -1,0 +1,19 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  REFERECE : LOS_REFERNCE_NUMBERS
+ *      - All Error numbers and their explanations are here.        *
+ *                                                                  *
+ *      last modified:  2014/06/12                                  *
+ *      first wrote:    2014/06/12                                  *
+ *                                                                  *
+ *      TheDizzler  < tgillon.music@gmail.com >                     *
+ *      wono        < wonho@live.com >                              *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+# Monsters moudle:
+
+    MS009401:
+        MTDescription:GET(instance) method error. It occurs when 
+        the instance name does not correspond any of class type 
+        described within its method. The instance must be sub-class 
+        tree of Monster type and should not be abstract class type.

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/15                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,15 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+2014/06/15
+==========
+-   New forked repository is created. From now on, all the dev 
+    progress and updates will be added into this repository. Several
+    file/directory organizations are changed. Minor change is changed.
+    
+-   The main README file is updated.
+
 
 2014/06/14
 ==========

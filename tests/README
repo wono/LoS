@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  README : LOS TESTING
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/15                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -38,12 +38,12 @@ commands for testing on the command line shell:
     
 Testing all modules
 -------------------
-    los/lgndofslnc/$> make
+    LoSA/game/$> make
 
 Testing error_handlers
 ----------------------
-    los/lgndofslnc/$> make test_error_handlers
+    LoSA/game/$> make test_error_handlers
 
 Testing monsters
 ----------------
-    los/lgndofslnc/$> make test_monsters
+    LoSA/game/$> make test_monsters

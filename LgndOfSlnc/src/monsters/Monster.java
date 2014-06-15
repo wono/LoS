@@ -15,7 +15,8 @@ import  static java.lang.System.out;
 public abstract class Monster {
 
     protected String description;
-
+    protected String name;
+    
     /**
      *  preventing to be initialized from outside of this family. 
      *  Use either RandomMonsterGen.GET() to get its concrete instance 
@@ -24,12 +25,19 @@ public abstract class Monster {
      */
     protected Monster ()
     {
-        this.description = MTDescription.GET ( this );
+        this.description    = MTDescription.GET ( this );
+        this.name           = MTName.GET        ( this );
     }
 
     public void describe () 
     {
         out.printf ( "%s\n", this.description );
+    }
+    
+    @Override
+    public String toString ()
+    {
+        return  this.name;
     }
 
 }

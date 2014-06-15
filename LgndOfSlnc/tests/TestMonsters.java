@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : TESTMONSTERS
  *                                                                  *
- *      last modified:  2014/06/13                                  *
+ *      last modified:  2014/06/14                                  *
  *      first wrote:    2014/06/09                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -16,9 +16,9 @@ import monsters.RandomMonsterGen;
 
 class TestMonsters {
 
-    private static int      TEST_TIME       = 16;
-    private static String   TEST_DECORATION = "==";    
-    private static String   TEST_PREFIX     = "TESTING......";
+    private static final int    TEST_TIME       = 16;
+    private static final String TEST_DECORATION = "==";    
+    private static final String TEST_PREFIX     = "TESTING......";
 
     public static void main ( String[] args )
     {

@@ -11,34 +11,3 @@
 All the monsters class file of LoS is located in this directory. This 
 module also provides testing files to test every monster objects. For 
 testing see this file: "LoS/lgndofslnc/README".
-
-Module Dev Progress
-===================
-2014/06/12
-    -   Recovered broken format of previous merging with 
-        origin/master.
-    -   Finalized src name package issue. Root package is NO LONGER 
-        src. Every package name begins its own directory name within 
-        'src/' as their root name. 
-    -   Updated monsters/OUTLINE. 
-    -   MTDescriptionInterface is added. All descriptions of monsters 
-        are moved to there.
-    -   Interface name MonsterIndex is replaced to MTIndexInterface. 
-        Its index name is also changed. Now all  monster index names 
-        begin with MTI_ instead of MI_.  
-    -   MTDescription class is added. Now describe() method of Monster 
-        class refers this class to print a monster description. A file
-        los_error_numbers.ref is added at lgndofslnc/reference/ 
-        directory to log all the error numbers of LoS within there. 
-    -   MTD_ERROR_MESSAGE constant is added into 
-        MTDescriptionInterface.
-    -   Test module is upgraded. Several minor issues are fixed.
-
-2014/06/10
-    Randomizing Monster instance generation features are added.
-
-2014/06/09 
-    Desgined structures and file organizaions of this module.
-
-2014/06/08
-    Start Project. Designed current module.

@@ -1,5 +1,5 @@
 ##############################
-  LEGEND OF SILENT ADVANTURE
+# LEGEND OF SILENT ADVANTURE #
 ##############################
     last modified:  2014/06/15
     first wrote:    2014/06/15

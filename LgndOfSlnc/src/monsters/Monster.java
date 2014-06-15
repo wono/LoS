@@ -15,15 +15,21 @@ import  static java.lang.System.out;
 public abstract class Monster {
 
     protected String description;
-    
-    public Monster ()
+
+    /**
+     *  preventing to be initialized from outside of this family. 
+     *  Use either RandomMonsterGen.GET() to get its concrete instance 
+     *  or new MonsterInit() to process a concrete instance with some 
+     *  house-keeping play.
+     */
+    protected Monster ()
     {
         this.description = MTDescription.GET ( this );
     }
-    
-	public void describe () 
-	{
+
+    public void describe () 
+    {
         out.printf ( "%s\n", this.description );
-	}
+    }
 
 }

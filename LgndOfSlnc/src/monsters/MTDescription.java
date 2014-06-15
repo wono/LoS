@@ -34,7 +34,7 @@ public class MTDescription implements MTDescriptionInterface {
 
     // preventing initialization from outside
     private MTDescription () {}
-    
+
     // returns corresponding moster descriptions, or null 
     public static String GET ( Monster m )
     {
@@ -42,9 +42,9 @@ public class MTDescription implements MTDescriptionInterface {
         if ( m instanceof SquirrelGold  ) return MTD_AN_SQUIRREL_GOLD;
         if ( m instanceof GunMan        ) return MTD_HM_GUN_MAN;
         if ( m instanceof KnifeMan      ) return MTD_HM_KNIFE_MAN;
-        
+
         EHMessage.PRINT ( m ); System.exit (1);
-        
+
         // never will happen
         return null;
     }

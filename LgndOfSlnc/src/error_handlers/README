@@ -1,0 +1,40 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  README : ERROR_HANDLERS
+ *                                                                  *
+ *      last modified:  2014/06/14                                  *
+ *      first wrote:    2014/06/14                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+Global error handling module. Errors of every all the LoS modules may
+be handled by it.
+
+EHMessage.java
+--------------
+    Error message handler. To print out error messages call it like 
+    this:
+        
+        EHMessage.PRINT( error_type )
+        
+    Note that error_type is must be one of the type registered at 
+    Types where are located in 'error_handlers/types' directory.
+    
+Interfaces
+==========
+
+EHMessageInterface.java
+-----------------------
+    For now, it is used to prefix error messages of each module. 
+    Later on, it would be used as library that holds more specific and 
+    user-friendly error messages for all the modules.
+
+
+Types
+=====
+
+TEHMonsters.java
+----------------
+    Type Error Handlers for Monsters. All the error indices of 
+    monsters modules are here.

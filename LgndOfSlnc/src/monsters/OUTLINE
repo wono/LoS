@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  OUTLINE : MONSTERS
  *                                                                  *
- *      last modified:  2014/06/12                                  *
+ *      last modified:  2014/06/14                                  *
  *      first wrote:    2014/06/08                                  *
  *                                                                  *
  *      TheDizzler  < tgillon.music@gmail.com >                     *
@@ -28,6 +28,17 @@ MonsterInit.java
     Class for initializing any monster. For now, random type of 
     monster is generated. Later some intersting rules with algorithms 
     on generating monster will be added.
+
+MTDescription.java
+------------------
+    Helper class for MonsterInit class to get a corresponding concrete 
+    instance among the all monster objects. It implements 
+    MTDescriptionInterface.java.
+    
+MTName.java
+-----------
+    Helper class for MonsterInit class to get a coressponding concrete 
+    instance among the all monster objects. MTNameInterface.java.
 
 TypeMonster.java
 ----------------

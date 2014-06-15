@@ -1,6 +1,6 @@
-=======================================
-  README : LEGEND OF SILENT ADVANTURE
-=======================================
+==============================
+  LEGEND OF SILENT ADVANTURE
+==============================
 
     last modified:  2014/06/15
     first wrote:    2014/06/15
@@ -32,7 +32,3 @@ events occurs. Here are brief information for commands.
     
     *   'A' - Physical attack
     *   'R' - Run
-    
-3.  View Map - will be introduced later.
-
-4.  View Inventory - will be introduced later.

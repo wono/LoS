@@ -2,7 +2,7 @@
  *  REFERECE : LOS_REFERNCE_NUMBERS
  *      - All Error numbers and their explanations are here.        *
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/15                                  *
  *      first wrote:    2014/06/12                                  *
  *                                                                  *
  *      TheDizzler  < tgillon.music@gmail.com >                     *
@@ -12,8 +12,14 @@
 
 # Monsters moudle:
 
+    TEMS0301:
+        Error at MTDescription.GET(instance) method. It occurs when 
+        the instance name does not correspond with any class type that
+        is listed within its method. The instance must be sub-class 
+        tree of Monster type and concrete class type (NOT abstract).
+
     TEMS0401:
-        MTDescription.GET(instance) method error. It occurs when 
-        the instance name does not correspond any of class type 
-        described within its method. The instance must be sub-class 
-        tree of Monster type and should not be abstract class type.
+        Error at MTName.GET(instance) method. It occurs when the 
+        instance name does not correspond with any class type that is 
+        listed within its method. The instance must be sub-class tree 
+        of Monster type and concrete class type (NOT abstract).

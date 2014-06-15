@@ -35,7 +35,10 @@ public class MTDescription implements MTDescriptionInterface {
     // preventing initialization from outside
     private MTDescription () {}
 
-    // returns corresponding moster descriptions, or null 
+    /** 
+     *  Returns corresponding moster descriptions. Otherwise, prints 
+     *  eorror message then exits.
+     */
     public static String GET ( Monster m )
     {
         if ( m instanceof GiantDuck     ) return MTD_AN_GIANT_DUCK; 
@@ -43,7 +46,8 @@ public class MTDescription implements MTDescriptionInterface {
         if ( m instanceof GunMan        ) return MTD_HM_GUN_MAN;
         if ( m instanceof KnifeMan      ) return MTD_HM_KNIFE_MAN;
 
-        EHMessage.PRINT ( m ); System.exit (1);
+        EHMessage.PRINT ( TEHMonster.TEMS0301 );
+        System.exit (1);
 
         // never will happen
         return null;

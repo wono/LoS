@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  OUTLINE : MONSTERS
  *                                                                  *
- *      last modified:  2014/06/12                                  *
+ *      last modified:  2014/06/15                                  *
  *      first wrote:    2014/06/08                                  *
  *                                                                  *
  *      TheDizzler  < tgillon.music@gmail.com >                     *
@@ -29,6 +29,17 @@ MonsterInit.java
     monster is generated. Later some intersting rules with algorithms 
     on generating monster will be added.
 
+MTDescription.java
+------------------
+    Helper class for MonsterInit class to get a corresponding concrete 
+    instance among the all monster objects. It implements 
+    MTDescriptionInterface.java.
+    
+MTName.java
+-----------
+    Helper class for MonsterInit class to get a coressponding concrete 
+    instance among the all monster objects. MTNameInterface.java.
+
 TypeMonster.java
 ----------------
     Enumeration class, representing type of monsters.
@@ -39,13 +50,17 @@ TypeMonster.java
         
 Interfaces
 ----------
-    Self defined interfaces for Monsters module.
+Self defined interfaces for Monsters module.
     
-    1.  MTIndexInterface.java:
-        Monster index interface
+    MTIndexInterface.java:
+        Monster index interface - all the monster indices are here.
         
-    2.  MTDescriptionInterface.java:
-        Monseter description interface
+    MTDescriptionInterface.java:
+        Monseter description interface - all the monster descriptions 
+        are here.
+    
+    MTNameInterface.java:
+        Monster name interface - all the monster names are here.
         
 Monster Type A: Animals
 -----------------------

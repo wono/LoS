@@ -1,0 +1,69 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  DEV PROGRESS : UPDATES_BY_WONO
+ *                                                                  *
+ *      last modified:  2014/06/14                                  *
+ *      first wrote:    2014/06/14                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+Dev progress by wono will be logged within this file.
+
+2014/06/14
+==========
+-   A module - error_handlers is added. Errors of every modules may be
+    handled with this module. 'monsters/OUTLINE' is updated. Test 
+    script for testing 'error_handlers' module is added into 'tests' 
+    module.  
+
+-   The previous error handling mechanism for monsters/MTDescription 
+    is replaced with new one - handling errors by 'error_handlers' 
+    module. An issue that has possible to redendantly call 
+    MTDescription.GET() method from describe() of Monster class is 
+    fixed for better performance. A member variable of Monster class 
+    holds a description from MTDescription.GET() method now. Related 
+    few minor issues are updated.
+
+
+2014/06/13
+==========
+-   Miner fixes at lgdofslnc/tests/TestMonsters.java - unnecessary 
+    redundancies are erased for better performance. 
+
+
+2014/06/12
+==========
+    -   Recovered broken format of previous merging with 
+        origin/master.
+    -   Finalized src name package issue. Root package is NO LONGER 
+        src. Every package name begins its own directory name within 
+        'src/' as their root name. 
+    -   Updated monsters/OUTLINE. 
+    -   MTDescriptionInterface is added. All descriptions of monsters 
+        are moved to there.
+    -   Interface name MonsterIndex is replaced to MTIndexInterface. 
+        Its index name is also changed. Now all  monster index names 
+        begin with MTI_ instead of MI_.  
+    -   MTDescription class is added. Now describe() method of Monster 
+        class refers this class to print a monster description. A file
+        los_error_numbers.ref is added at lgndofslnc/reference/ 
+        directory to log all the error numbers of LoS within there. 
+    -   MTD_ERROR_MESSAGE constant is added into 
+        MTDescriptionInterface.
+    -   Test module is upgraded. Several minor issues are fixed.
+
+2014/06/10
+==========
+    -   Randomizing Monster instance generation features are added 
+        into monsters module.
+
+2014/06/09
+========== 
+    -   Organized file structures and their relation ship ons of 
+        monsters module.
+
+2014/06/08
+==========
+    -   Start Project. A rough version of monsters module is designed.
+

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : MTDESCRIPTION
  *                                                                  *
- *      last modified:  2014/06/12                                  *
+ *      last modified:  2014/06/14                                  *
  *      first wrote:    2014/06/12                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,8 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 package monsters;
+
+import  error_handlers.EHMessage;
 
 import  monsters.interfaces.MTDescriptionInterface;
 import  monsters.animals.GiantDuck;
@@ -21,7 +23,7 @@ import  monsters.humans.KnifeMan;
  *  description from outside method is static. To get description 
  *  from outside of this class call this method like this: 
  *
- *      String description = MTDescription::GET( aMonsterInstance );
+ *      String description = MTDescription.GET( aMonsterInstance );
  *  
  *  For extending more descriptions, you need:
  *      1.  Add descriptions into MTDescriptionInterface
@@ -32,16 +34,23 @@ public class MTDescription implements MTDescriptionInterface {
 
     // preventing initialization from outside
     private MTDescription () {}
-    
-    // returns corresponding moster descriptions, or an error message 
+
+    /** 
+     *  Returns corresponding moster descriptions. Otherwise, prints 
+     *  eorror message then exits.
+     */
     public static String GET ( Monster m )
     {
         if ( m instanceof GiantDuck     ) return MTD_AN_GIANT_DUCK; 
         if ( m instanceof SquirrelGold  ) return MTD_AN_SQUIRREL_GOLD;
         if ( m instanceof GunMan        ) return MTD_HM_GUN_MAN;
         if ( m instanceof KnifeMan      ) return MTD_HM_KNIFE_MAN;
-        
-        return MTD_ERROR_MESSAGE;
+
+        EHMessage.PRINT ( TEHMonster.TEMS0301 );
+        System.exit (1);
+
+        // never will happen
+        return null;
     }
 
 }

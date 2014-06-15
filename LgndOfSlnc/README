@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  README : LOS TESTING
  *                                                                  *
- *      last modified:  2014/06/10                                  *
+ *      last modified:  2014/06/14                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -10,26 +10,40 @@
 
 Testing with Makefile
 =====================
-
-Makefile is provided to test for Unix like operating systems.
-
-    On the shell command line type:
-    
-        los/lgndofslnc/ $> make
-
-    It would comile and execute testing file, then delete the binary 
-    files (for cleaning).
-    
-See the Makefile for more details. 
+Makefile is provided to test for Unix like operating systems. See the 
+Makefile for more details.
 
 
 Available Testing Module For Now
 ================================
 
-Module 1 - Monsters
--------------------
+Error Handlers
+--------------
+    Testing for error_handlers module. 
+    See the "tests/TestErrorHandlers.java" for more details.
+
+Monsters
+--------
     Fundamental sturture & file organization testing is provided. 
     Testing for Randomizing Monster instance initialization feature is 
-    also provided. See the "tests/TestMonsters.java" file for more 
-    details.
+    also provided. See the "tests/TestMonsters.java" for more details.
         
+        
+How To Test 
+=========== 
+
+The test program would comile and execute each testing file (or all), 
+then delete the binary files (for cleaning). The followings are 
+commands for testing on the command line shell:
+    
+Testing all modules
+-------------------
+    los/lgndofslnc/$> make
+
+Testing error_handlers
+----------------------
+    los/lgndofslnc/$> make test_error_handlers
+
+Testing monsters
+----------------
+    los/lgndofslnc/$> make test_monsters

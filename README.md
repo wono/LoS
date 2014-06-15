@@ -2,10 +2,10 @@
   README : LEGEND OF SILENT ADVANTURE
 =======================================
 
-last modified:  2014/06/15
-first wrote:    2014/06/15
+    last modified:  2014/06/15
+    first wrote:    2014/06/15
 
-wono (wonho lim: wono@live.com)
+    wono (wonho lim: wono@live.com)
 
 Legend Of Silent Advanture is a simple text-based RPG game for command 
 line interface. This game is forked version of LoS (Legend of Silence) 
@@ -21,10 +21,10 @@ events occurs. Here are brief information for commands.
 1.  Moving
     You have four directions to move each room unless there is no 
     obstacles.
-    'N' - North
-    'S' - South
-    'E' - East    
-    'W' - West
+    *   'N' - North
+    *   'S' - South
+    *   'E' - East    
+    *   'W' - West
 
 2.  Using Skill
     You will have various skills while playing games. Here are some, 

@@ -10,8 +10,8 @@
 #####################################################################
 
 all:
-	make test_hero 				&&\
-	make test_error_handlers 	&&\
+	make test_hero				&&\
+	make test_error_handlers	&&\
 	make test_monsters
 
 test_hero:

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  README : LOS TESTING
  *                                                                  *
- *      last modified:  2014/06/15                                  *
+ *      last modified:  2014/06/16                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -36,14 +36,18 @@ The test program would comile and execute each testing file (or all),
 then delete the binary files (for cleaning). The followings are 
 commands for testing on the command line shell:
     
-Testing all modules
--------------------
-    LoSA/game/$> make
+Testing all modules:
+--------------------
+    LoSA/$> make
 
-Testing error_handlers
-----------------------
-    LoSA/game/$> make test_error_handlers
+Testing Hero:
+-------------
+    LoSA/$> make test_hero
+
+Testing error_handlers:
+-----------------------
+    LoSA/$> make test_error_handlers
 
 Testing monsters
 ----------------
-    LoSA/game/$> make test_monsters
+    LoSA/$> make test_monsters

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/15                                  *
+ *      last modified:  2014/06/16                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,15 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/16
+==========
+-   A file src/hero/Hero.java is re-written. Singletone design pattern 
+    is applied to avoid multiple invoking of Hero instance. A test 
+    file - tests/TestHero.java is added, and Makefile is updated to 
+    run this test file. 
+
 
 2014/06/15
 ==========

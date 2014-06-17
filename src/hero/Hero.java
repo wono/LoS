@@ -1,0 +1,45 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  JAVA : HERO
+ *                                                                  *
+ *      last modified:  2014/06/16                                  *
+ *      first wrote:    2014/06/16                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+package hero;
+
+/**
+ *  Representing hero. Singletone design pattern. To get the Hero 
+ *  instance invoke the method like this:
+ *
+ *      Hero hero = Hero.GET ();
+ *
+ */
+public class Hero {
+
+    private static Hero _instance = null;
+    
+    private String      name;
+    
+    //  prevents being called from outside
+    private Hero ()
+    {
+        this.name = "The hero";
+    }
+    
+    public static Hero GET ()
+    {
+        if ( null == _instance )
+            _instance = new Hero ();
+
+        return  _instance;
+    }
+    
+    @Override
+    public String toString ()
+    {
+        return  this.name;
+    }
+}

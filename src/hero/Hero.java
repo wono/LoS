@@ -21,18 +21,15 @@ public class Hero {
 
     private static Hero _instance = null;
     
-    private String      name;
-    
     //  prevents being called from outside
     private Hero ()
     {
-        this.name = "The hero";
+
     }
     
     public static Hero GET ()
     {
-        if ( null == _instance )
-            _instance = new Hero ();
+        if ( null == _instance )    _instance = new Hero ();
 
         return  _instance;
     }
@@ -40,6 +37,6 @@ public class Hero {
     @Override
     public String toString ()
     {
-        return  this.name;
+        return  "The hero";
     }
 }

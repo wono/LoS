@@ -1,73 +1,42 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  JAVA : HERO
+ *                                                                  *
+ *      last modified:  2014/06/16                                  *
+ *      first wrote:    2014/06/16                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
 package hero;
 
-import java.util.ArrayList;
-import java.util.Random;
-
-import objects.Pocketable;
-import objects.equipment.Armour;
-import objects.equipment.Equipable;
-import main.Engine;
-import monsters.Monster;
-
-
-
+/**
+ *  Representing hero. Singletone design pattern. To get the Hero 
+ *  instance invoke the method like this:
+ *
+ *      Hero hero = Hero.GET ();
+ *
+ */
 public class Hero {
-	
-	public String			name;
-	
-	public int				maxHP, currentHP;
-	public int				strength, agility, cunning;
-	
-	public ArrayList<Skill>	skills		= new ArrayList<Skill>();
-	
-	Random					numGen		= new Random();
-	
-	public Equipable		hands[];
-	public Armour			wearing;
-	
-	public Inventory		inventory	= new Inventory();
-	
-	
-	public Hero(String name) {
-	
-		this.name = name;
-		generateStats();
-	}
-	
-	/** Creates the new hero's stats. */
-	private void generateStats() {
-	
-		strength = (int) (numGen.nextFloat() * 5) + 5;
-		agility = (int) (numGen.nextFloat() * 5) + 5;
-		cunning = (int) (numGen.nextFloat() * 5) + 5;
-	}
-	
-	
-	
-	/** */
-	public void attack(Monster target) {
-	
-		// Some attack formula to hit
-		// target.takeDamage(Some damage formula)
-	}
-	
-	/** Find the hero's highest attribute and return an adjective describing it. */
-	public String mainAttribute() {
-	
-		int highest = 0;
-		String att = null;
-		if (strength > highest) {
-			highest = strength;
-			att = "strong";
-		}
-		if (agility > highest) {
-			highest = agility;
-			att = "agile";
-		}
-		if (cunning > highest) {
-			highest = cunning;
-			att = "cunning";
-		}
-		return att;
-	}
+
+    private static Hero _instance = null;
+    
+    //  prevents being called from outside
+    private Hero ()
+    {
+
+    }
+    
+    public static Hero GET ()
+    {
+        if ( null == _instance )    _instance = new Hero ();
+
+        return  _instance;
+    }
+    
+    @Override
+    public String toString ()
+    {
+        return  "The hero";
+    }
 }

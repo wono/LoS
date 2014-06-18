@@ -20,6 +20,22 @@ Dev progress by wono will be logged within this file.
     added. A file - 'tests/README' is updated. 
 
 
+2014/06/16
+==========
+-   A file src/hero/Hero.java is re-written. Singletone design pattern 
+    is applied to avoid multiple invoking of Hero instance. A test 
+    file - tests/TestHero.java is added, and Makefile is updated to 
+    run this test file. 
+
+
+2014/06/15 
+========== 
+-   Several file/directory organizations are changed. Minor change is 
+    changed.
+    
+-   The main README file is updated.
+
+
 2014/06/14
 ==========
 -   A module - error_handlers is added. Errors of every modules may be

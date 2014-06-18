@@ -6,12 +6,12 @@
     first wrote:    2014/06/08
 
     TheDizzler  (tgillon.music@gmail.com)
-    wono        (wono@live.com)
+    wono        (wonho lim: wono@live.com)
 
-Legend Of Silence is a pilot version of simple text-based RPG game for 
-command line interface.
+Legend Of Silence a pilot verision of simple text-based RPG game for 
+command line interface. 
 
-How To Play
+How To Play 
 =========== 
 During the play, the program will show you messages prompting when 
 events occurs. Here are brief information for commands.

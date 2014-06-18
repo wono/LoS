@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : MTDESCRIPTION
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/16                                  *
  *      first wrote:    2014/06/12                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -11,6 +11,7 @@
 package monsters;
 
 import  error_handlers.EHMessage;
+import  error_handlers.types.TEHMonsters;
 
 import  monsters.interfaces.MTDescriptionInterface;
 import  monsters.animals.GiantDuck;
@@ -46,7 +47,7 @@ public class MTDescription implements MTDescriptionInterface {
         if ( m instanceof GunMan        ) return MTD_HM_GUN_MAN;
         if ( m instanceof KnifeMan      ) return MTD_HM_KNIFE_MAN;
 
-        EHMessage.PRINT ( TEHMonster.TEMS0301 );
+        EHMessage.PRINT ( TEHMonsters.TEMS0301 );
         System.exit (1);
 
         // never will happen

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  README : LOS TESTING
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/18                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -17,33 +17,51 @@ Makefile for more details.
 Available Testing Module For Now
 ================================
 
+Hero
+----
+    Testing all the files within hero module.
+    The test file is 'tests/TestHero.java'.
+
 Error Handlers
 --------------
-    Testing for error_handlers module. 
-    See the "tests/TestErrorHandlers.java" for more details.
+    Testing all teh files within error_handlers module. 
+    The test file is 'tests/TestErrorHandlers.java'.
 
 Monsters
 --------
     Fundamental sturture & file organization testing is provided. 
     Testing for Randomizing Monster instance initialization feature is 
-    also provided. See the "tests/TestMonsters.java" for more details.
+    also provided. The test file is 'tests/TestMonsters.java'.
         
         
 How To Test 
 =========== 
 
 The test program would comile and execute each testing file (or all), 
-then delete the binary files (for cleaning). The followings are 
-commands for testing on the command line shell:
+then delete the binary files (for cleaning). It also opens log files - 
+(tests/logs/*) to show result and error of each test. GNU Nano editor 
+is used to open these log files. The followings are commands for 
+testing on the command line shell:
+
+Commands For Testing
+--------------------
+Testing all modules:
+    LoSA/$> make
+
+Testing Hero:
+    LoSA/$> make test_hero
+
+Testing error_handlers:
+    LoSA/$> make test_error_handlers
+
+Testing monsters:
+    LoSA/$> make test_monsters
+
+
+Commands For Viewing
+--------------------
+To clean log files:
+    LoSA/$> make clean
     
-Testing all modules
--------------------
-    los/lgndofslnc/$> make
-
-Testing error_handlers
-----------------------
-    los/lgndofslnc/$> make test_error_handlers
-
-Testing monsters
-----------------
-    los/lgndofslnc/$> make test_monsters
+To manually view log files:
+    Losa/$> make view

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/06/18                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,16 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/18
+==========
+-   A bash script - 'tests/runtests' is added to reduce code 
+    redendencty at Makefile. Now Makefile calls 'tests/runtests' 
+    script to compile and run each test. Features to log result and 
+    error of each test and to view its log file at 'tests/logs/' are 
+    added. A file - 'tests/README' is updated. 
+
 
 2014/06/14
 ==========

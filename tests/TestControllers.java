@@ -11,7 +11,7 @@
 import static java.lang.System.out;
 
 import controllers.AttackOrRun;
-import controllers.Direction;
+//import controllers.Direction;
 
 public class TestControllers {
 
@@ -21,7 +21,6 @@ public class TestControllers {
         out.println ( "  TEST : CONTROLLERS  " );
         out.println ( "======================" );
         test_attack_run ();
-        
     }
     
     private static void test_attack_run ()
@@ -35,6 +34,6 @@ public class TestControllers {
     {
         out.println ( "TEST 2 : Dirrection" );
         out.println ( "-------------------" );
-        Directions.CTRL ();         
+  //      Directions.CTRL ();         
     }
 }

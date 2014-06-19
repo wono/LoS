@@ -1,12 +1,12 @@
-##############################
-# LEGEND OF SILENT ADVANTURE #
-##############################
+#####################
+# LEGEND OF SILENCE #
+#####################
 
     last modified:  2014/06/18
     first wrote:    2014/06/08
 
     TheDizzler  (tgillon.music@gmail.com)
-    wono        (wonho lim: wono@live.com)
+    wono        (wono@live.com)
 
 Legend Of Silence a pilot verision of simple text-based RPG game for 
 command line interface. 

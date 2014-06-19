@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : ATTACKORRUN
  *                                                                  *
- *      last modified:  2014/06/18                                  *
+ *      last modified:  2014/06/19                                  *
  *      first wrote:    2014/06/18                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -15,7 +15,7 @@ import  static java.lang.System.out;
 import  controllers.types.TPrmpt;
 
 /**
- *  Controller for attacking and running. To call this controler from 
+ *  Controller for attacking and running. To use this controller from 
  *  the outside where imports this class, call the method like this:
  *
  *      AttackOrRun.CTRL ();  

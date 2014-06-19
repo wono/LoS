@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/18                                  *
+ *      last modified:  2014/06/19                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,19 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/19
+==========
+-   A test file - tests/TestController.java is added.
+
+-   A set of commands for testing a module with 
+    'tests/TestControllers.java' is added into Makefile.
+
+-   A file - 'Direction.java' is added into controllers module. 
+    Function to test this controller is added into 
+    'tests/TestControllers.java'.
+
 
 
 2014/06/18

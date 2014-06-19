@@ -13,6 +13,10 @@ Dev progress by wono will be logged within this file.
 
 2014/06/18
 ==========
+-   A module - controllers is added. All the user-input controlling 
+    mechanisms will be featured at there. Currently attack and run 
+    features are available. 
+
 -   A bash script - 'tests/runtests' is added to reduce code 
     redendencty at Makefile. Now Makefile calls 'tests/runtests' 
     script to compile and run each test. Features to log result and 

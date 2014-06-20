@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : TESTCONTROLLERS
  *                                                                  *
- *      last modified:  2014/06/19                                  *
+ *      last modified:  2014/06/20                                  *
  *      first wrote:    2014/06/18                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -20,8 +20,11 @@ public class TestControllers {
         out.println ( "======================" );
         out.println ( "  TEST : CONTROLLERS  " );
         out.println ( "======================" );
+        out.println ();
         test_attack_run ();
+        out.println ();
         test_direction  ();
+        out.println ();
     }
     
     private static void test_attack_run ()

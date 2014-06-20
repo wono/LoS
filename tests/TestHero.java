@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : TESTHERO
  *                                                                  *
- *      last modified:  2014/06/16                                  *
+ *      last modified:  2014/06/20                                  *
  *      first wrote:    2014/06/16                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -19,10 +19,9 @@ public class TestHero {
         out.println ( "===============" );
         out.println ( "  TEST : HERO  " );
         out.println ( "===============" );
-
+        out.println ();
         test_instance_get ();
-        
-        out.println ( "\n" );
+        out.println ();
     }
     
     private static void test_instance_get ()
@@ -30,8 +29,15 @@ public class TestHero {
         Hero h1 = Hero.GET ();
         Hero h2 = Hero.GET ();
         
-        out.printf ( "h1 == h2 ? %s\n", 
+        out.println ( "TEST 1 : Hero Instance ( Singletone )" );
+        out.println ( "-------------------------------------" );
+        out.println ( "Hero h1 = Hero.GET ()" );
+        out.println ( "Hero h2 = Hero.GET ()" );
+        out.println ();
+
+        out.printf  ( "h1 == h2 ? %s\n",
             h1.equals ( h2 ) ? "YES" : "NO" );
+        out.println ();
         
         out.printf ( "Hero name: %s\n", Hero.GET () );
     }

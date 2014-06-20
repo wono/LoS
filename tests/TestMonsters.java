@@ -23,6 +23,7 @@ class TestMonsters {
         out.println ( "===================" );
         out.println ( "  TEST : MONSTERS  " );
         out.println ( "===================" );
+        out.println ();
 
         test_monster_init   ();
         out.println ();

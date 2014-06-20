@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : TESTMONSTERS
  *                                                                  *
- *      last modified:  2014/06/15                                  *
+ *      last modified:  2014/06/20                                  *
  *      first wrote:    2014/06/09                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -23,6 +23,7 @@ class TestMonsters {
         out.println ( "===================" );
         out.println ( "  TEST : MONSTERS  " );
         out.println ( "===================" );
+        out.println ();
 
         test_monster_init   ();
         out.println ();
@@ -49,6 +50,6 @@ class TestMonsters {
         out.println ( "-------------------------" );
         
         while ( i++ < TEST_TIME )
-            out.printf ( "%ss\n", RandomMonsterGen.GET() );
+            out.printf ( "%s\n", RandomMonsterGen.GET() );
     }
 }

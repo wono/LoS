@@ -2,7 +2,7 @@
 #   MAKEFILE:
 #       LOS - Monsters module testing program                       #
 #                                                                   #
-#       last modified:  2014/06/19                                  #
+#       last modified:  2014/06/20                                  #
 #       first wrote:    2014/06/09                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -18,9 +18,10 @@ all:
 	
 test_controllers:
 	cd tests &&\
-	javac TestControllers.java -sourcepath ../src -d ../src
-	cd src && java TestControllers
+	javac TestControllers.java -sourcepath ../src -d ../bin
+	cd bin && java TestControllers
 	make clean_bin
+	
 test_hero:
 	cd tests && ./runtests hero && cd ..
 	make view
@@ -40,9 +41,7 @@ clean:
 	rm tests/logs/*
 	
 clean_bin:
-	rm src/*.class
-	rm src/*/*.class
-	rm src/*/*/*.class
-
+	rm -r bin/*
+	
 view:
 	nano -v tests/logs/*

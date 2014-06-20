@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/19                                  *
+ *      last modified:  2014/06/20                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,14 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/20
+==========
+-   Makefile and tests/runtests files are modified. Now all the source 
+    files for testing are compiled in 'bin/' directory.
+
+-   All test files are modified - better formats, fixed minor issues.
 
 
 2014/06/19
@@ -21,7 +29,6 @@ Dev progress by wono will be logged within this file.
 -   A file - 'Direction.java' is added into controllers module. 
     Function to test this controller is added into 
     'tests/TestControllers.java'.
-
 
 
 2014/06/18

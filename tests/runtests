@@ -1,7 +1,7 @@
 ################################################
 #   SH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/06/18                                  #
+#       last modified:  2014/06/20                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -13,7 +13,7 @@
 #       - error_handlers
 #       - monstesrs
 
-COMPILE_FLAG="-sourcepath ../src/ -d ../src/"
+COMPILE_FLAG="-sourcepath ../src/ -d ../bin/"
 PATH_TO_LOGS="../tests/logs/"
 
 function COMPILE ()
@@ -23,7 +23,7 @@ function COMPILE ()
 
 function RUN ()
 {
-    cd ../src/ &&\
+    cd ../bin/ &&\
     java $1 > ${PATH_TO_LOGS}${1}.log 2>${PATH_TO_LOGS}${1}.err &&\
     cd ../tests
 }

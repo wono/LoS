@@ -23,7 +23,6 @@ Dev progress by wono will be logged within this file.
     'tests/TestControllers.java'.
 
 
-
 2014/06/18
 ==========
 -   A module - controllers is added. All the user-input controlling 

@@ -1,7 +1,7 @@
 ################################################
 #   SH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/06/20                                  #
+#       last modified:  2014/06/21                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -12,6 +12,7 @@
 #       - hero
 #       - error_handlers
 #       - monstesrs
+#       - skills
 
 COMPILE_FLAG="-sourcepath ../src/ -d ../bin/"
 PATH_TO_LOGS="../tests/logs/"
@@ -28,20 +29,24 @@ function RUN ()
     cd ../tests
 }
 
+function CLEAN ()
+{
+    rm -rf ../bin/*
+}
+
 function RUN_TEST ()
 {
-    COMPILE $1 && RUN $1
+    COMPILE $1 && RUN $1 && CLEAN
 }
 
 case ${1} in
-    hero            )   FILE_TO_TEST=TestHero
-                        RUN_TEST $FILE_TO_TEST ;;
+    hero            )   RUN_TEST TestHero           ;;
 
-    error_handlers  )   FILE_TO_TEST=TestErrorHandlers
-                        RUN_TEST $FILE_TO_TEST ;;
+    error_handlers  )   RUN_TEST TestErrorHandlers  ;;
     
-    monsters        )   FILE_TO_TEST=TestMonsters
-                        RUN_TEST $FILE_TO_TEST ;;
+    monsters        )   RUN_TEST TestMonsters       ;;
+    
+    skills          )   RUN_TEST TestSkills         ;;
     
     *)  echo $1 is invalid module name for testing. ;;
 esac

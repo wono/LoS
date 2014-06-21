@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/20                                  *
+ *      last modified:  2014/06/21                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,17 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/21
+==========
+-   A test file - 'tests/TestSkills.java' is added. Test module is 
+    updated to run this test file. 
+
+-   A new module - 'skills' is added. It has categorized skill sets - 
+    phisical attacks, offensive buffers, and defensive buffers (will 
+    be added soon) with their few skills (methods) and interfaces - 
+    names, effects.
 
 
 2014/06/20

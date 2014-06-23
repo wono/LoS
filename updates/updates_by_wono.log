@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/21                                  *
+ *      last modified:  2014/06/22                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -11,9 +11,21 @@
 Dev progress by wono will be logged within this file.
 
 
-2014/06/21
+2014/06/22
 ==========
--   A test file - 'tests/TestSkills.java' is added. Test module is 
+-   An interface - 'controllers/interface/CtrKeyIndex.java' is added. 
+    All the keys to proceed user input, that is charater, will be 
+    written here.
+
+-   Interface - 'controllers.interfaces.CtrlKeyIndex.java' is 
+    implemented into all controllers - 'AttackOrRun.java' and 
+    'Direction.java. Minor issues are fixed at this interface to be 
+    implemented properly.
+
+
+2014/06/21 
+========== 
+-   A test file - 'tests/TestSkills.java' is added. Test module is
     updated to run this test file. 
 
 -   A new module - 'skills' is added. It has categorized skill sets - 

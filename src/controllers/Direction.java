@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : DIRECTION
  *                                                                  *
- *      last modified:  2014/06/19                                  *
+ *      last modified:  2014/06/22                                  *
  *      first wrote:    2014/06/19                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -11,7 +11,9 @@
 package controllers;
 
 import  static java.lang.System.out;
+import  java.lang.Character;
 
+import  controllers.interfaces.CtrlKeyIndex;
 import  controllers.types.TPrmpt;
 
 /**
@@ -21,7 +23,7 @@ import  controllers.types.TPrmpt;
  *
  *      Direction.CTRL ();
  */
-public class Direction {
+public class Direction implements CtrlKeyIndex {
 
     // Prevents being initialized
     private Direction () {}
@@ -31,21 +33,14 @@ public class Direction {
         char    c   = UInput.GET_KEY ( TPrmpt.DIRECTIONS );
         String  s   = "You are headed to";
         
-        switch ( c ) {
+        switch ( Character.toUpperCase ( c ) ) {
             
-            case 'N':
-            case 'n':   out.printf ( "%s North.\n", s ); break;
-            
-            case 'S':   
-            case 's':   out.printf ( "%s South.\n", s ); break;
-            
-            case 'E':   
-            case 'e':   out.printf ( "%s East.\n" , s ); break;
-        
-            case 'W':   
-            case 'w':   out.printf ( "%s West.\n" , s ); break;
-            
-            default :   CTRL ();
+            case CKDR_NORTH : out.printf ( "%s North.\n", s ); break;
+            case CKDR_SOUTH : out.printf ( "%s South.\n", s ); break;
+            case CKDR_EAST  : out.printf ( "%s East.\n" , s ); break;
+            case CKDR_WEST  : out.printf ( "%s West.\n" , s ); break;
+
+            default         : CTRL ();
         } 
     }
 }

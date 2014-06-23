@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : ATTACKORRUN
  *                                                                  *
- *      last modified:  2014/06/19                                  *
+ *      last modified:  2014/06/22                                  *
  *      first wrote:    2014/06/18                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -11,7 +11,9 @@
 package controllers;
 
 import  static java.lang.System.out;
+import  java.lang.Character;
 
+import  controllers.interfaces.CtrlKeyIndex;
 import  controllers.types.TPrmpt;
 
 /**
@@ -20,7 +22,7 @@ import  controllers.types.TPrmpt;
  *
  *      AttackOrRun.CTRL ();  
  */
-public class AttackOrRun {
+public class AttackOrRun implements CtrlKeyIndex {
 
     // Prevents being initialized
     private AttackOrRun () {}
@@ -28,17 +30,13 @@ public class AttackOrRun {
     public static void CTRL ()
     {
         char c = UInput.GET_KEY ( TPrmpt.ATTACK_RUN );
-            
-        switch ( c ) {
-            
-            case 'A':
-            case 'a':   out.printf ( "ATTACK!\n" ); break;
-            
-            case 'R':
-            case 'r':   out.printf ( "RUNNNN!\n" ); break;
-            
-            default :   CTRL ();
         
+        switch ( Character.toUpperCase ( c ) ) {
+            
+            case CKAR_ATTACK    :   out.println ( "ATTACK!" ); break;
+            case CKAR_RUN       :   out.println ( "RUNNNN!" ); break;
+
+            default             :   CTRL ();
         }
         
     }

@@ -11,23 +11,22 @@
 package controllers.interfaces;
 
 /**
- *  All the key information to control are here.
+ *  All the key information to proceed user input are here.
  *
  *  Note that characters representing their keys are uppercase.
  *  Prefix naming convention:
  *      CKAR_   - Control Key that represents Attack or Run
  *      CKDR_   - Control Key that represents Direction
  */
-
-pulbic interface CtrKeyIndex {
+public interface CtrlKeyIndex {
 
     /** Keys that represent attack and run */
-    static final String CKAR_ATACK      = 'A';
-    static final String CKAR_RUN        = 'R';
+    static final char CKAR_ATTACK    = 'A';
+    static final char CKAR_RUN       = 'R';
        
     /** Keys that represent directions */
-    static final String CKDR_EAST       = 'E';
-    static final String CKDR_NORTH      = 'N';
-    static final String CKDR_SOUTH      = 'S';
-    static final String CKDR_WEST       = 'W';    
+    static final char CKDR_EAST      = 'E';
+    static final char CKDR_NORTH     = 'N';
+    static final char CKDR_SOUTH     = 'S';
+    static final char CKDR_WEST      = 'W';    
 }

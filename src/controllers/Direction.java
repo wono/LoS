@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : DIRECTION
  *                                                                  *
- *      last modified:  2014/06/19                                  *
+ *      last modified:  2014/06/22                                  *
  *      first wrote:    2014/06/19                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *

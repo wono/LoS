@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SKILL BFO
  *                                                                  *
- *      last modified:  2014/06/21                                  *
+ *      last modified:  2014/06/24                                  *
  *      first wrote:    2014/06/21                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -24,10 +24,22 @@ import  skills.interfaces.SkillName;
  *  Later on, it would be modified to return an Object or special type 
  *  to effect something interesting.
  */
-public class SkillBFO implements SkillName {
+public class SkillBFO   extends     Skill
+                        implements  SkillName {
 
-    // Prevents being initialized from outside.
-    private SkillBFO () {}
+    private static SkillBFO instance = null;
+    
+    // preventing to be initialize from outside
+    public SkillBFO () {}
+    
+    // singletone    
+    public static SkillBFO INSTANCE ()
+    {
+        if ( null == instance )
+            instance = new SkillBFO ();
+            
+        return instance;
+    }
     
     /**
      *  Sweats monsters near Hero. If the monster is listenable that 

@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SKILL MAPPER
  *                                                                  *
- *      last modified:  2014/06/23                                  *
+ *      last modified:  2014/06/24                                  *
  *      first wrote:    2014/06/23                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -10,8 +10,6 @@
 
 package skills;
 
-import  static java.lang.System.out;
-
 import  java.lang.reflect.Method;
 import  java.util.HashMap;
 
@@ -19,37 +17,57 @@ import  java.lang.reflect.InvocationTargetException;
 
 /**
  *  Skill Mapper is a core program that enables to map a skill set 
- *  with a key set.
+ *  with a key set. It can be used to map each skill set such as 
+ *  SkillBFD, SkillBFO, and SkillPHA with numeric indices, that is 
+ *  Integer type, respectively. 
+ *  
+ *  The mapping with numeric indices are 
+ *  flexible and customizable. It means that this class can also be 
+ *  used for some customization related to skill set. In instance, it 
+ *  can be used to add a feature that user can customize skill set 
+ *  with arbitary numeric keys. It would also be used as a key tool 
+ *  for designing an adanced game system such as Hero leveling system 
+ *  - adding or upgrading skill set along with level up.
  *
- *  Note that the caller of this method set requires to throws the 
- *  following exception types:
+ *  Please note that the caller of the method - setSkill() requires to 
+ *  specify following exception types to throw:
  *      java.lang.IllegalAccessException,
  *      java.lang.NoSuchMethodException,
  *      java.lang.reflect.InvocationTargetException
  */
 public class SkillMapper {
 
-    private static Class<Skill> s = Skill.class;
-    private static HashMap<Integer, Method> map
-        = new HashMap<Integer, Method>;
+    private Class<?>                    skillType;
+    private HashMap<Integer, Method>    map;
 
-    // preventing to be initialized
-    private SkillMapper () {}
-    
-    public static HashMap<Integer, Method> GET_MAP ()
+    public SkillMapper ( Skill s )
     {
-        return  map;
+        if ( s instanceof SkillBFO )
+            this.skillType = SkillBFO.class;
+        
+        if ( s instanceof SkillBFD )
+            this.skillType = SkillBFD.class;
+        
+        if ( s instanceof SkillPHA )
+            this.skillType = SkillPHA.class;
+            
+        this.map = new HashMap<Integer, Method> ();
     }
     
-    public static Method GET_SKILL ( int key )
+    public HashMap<Integer, Method> getMap ()
     {
-        return  map.get(key);
+        return  this.map;
     }
     
-    public static void 
-    SET_SKILL ( int key, String skillName )
-    throws NoSuchMethodException
+    public Method getSkill ( int key )
     {
-        map.put ( key, s.getMethod ( skillName ) );
+        return  this.map.get(key);
+    }
+    
+    public void 
+    setSkill (  int     key, 
+                String  skillName ) throws NoSuchMethodException
+    {
+        map.put ( key, skillType.getMethod ( skillName ) );
     }
 }

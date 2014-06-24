@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SKILL PHA
  *                                                                  *
- *      last modified:  2014/06/21                                  *
+ *      last modified:  2014/06/24                                  *
  *      first wrote:    2014/06/21                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -21,11 +21,23 @@ import  skills.interfaces.SkillName;
  *
  *      SkillPHA.A_SKILL_METHOD_NAME ();
  */
-public class SkillPHA implements    EffectPHA,
+public class SkillPHA   extends     Skill 
+                        implements  EffectPHA,
                                     SkillName   {
+    
+    private static SkillPHA instance = null;
 
-    // Prevents being initialized from outside.
+    // reventing to be initialized from outside
     private SkillPHA () {}
+    
+    // singleton
+    public static SkillPHA INSTANCE ()
+    {
+        if ( null == instance )
+            instance = new SkillPHA ();
+        
+        return instance;
+    }
     
     /**
      *  Punches a monster. Returns the damage.

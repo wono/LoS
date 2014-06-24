@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/22                                  *
+ *      last modified:  2014/06/24                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,16 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/24
+==========
+-   The module - 'skills' is updated. Now the SkillMapper class 
+    smoothly interects with the Skill family classes. SkillPHD.java
+    file is added there. Test module is also updated to test the 
+    interection between SkillMapper and Skill family classes. To test 
+    this use 'make skills' command at the root directory.
+
 
 2014/06/23
 ==========

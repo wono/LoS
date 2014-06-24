@@ -10,6 +10,13 @@
 
 Dev progress by wono will be logged within this file.
 
+2014/06/23
+==========
+-   Skill.java and SkillMapper.java are added at 'skills'. SkillMapper 
+    is a core program helping to map each skill type with a key set 
+    respectfully. Constants representing numeric keys are added onto 
+    the interface - 'skills/interfaces/CtrlKeyIndex.java'.
+
 
 2014/06/22
 ==========

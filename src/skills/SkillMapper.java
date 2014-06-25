@@ -37,21 +37,25 @@ import  java.lang.reflect.InvocationTargetException;
  */
 public class SkillMapper {
 
-    private Class<?>                    skillType;
+    // a class type that extends Skill class
+    private Class<? extends Skill>      sType;
+    
     private HashMap<Integer, Method>    map;
 
     public SkillMapper ( Skill s )
     {
         if ( s instanceof SkillBFO )
-            this.skillType = SkillBFO.class;
+            this.sType  = SkillBFO.class;
         
         if ( s instanceof SkillBFD )
-            this.skillType = SkillBFD.class;
+            this.sType  = SkillBFD.class;
         
         if ( s instanceof SkillPHA )
-            this.skillType = SkillPHA.class;
-            
-        this.map = new HashMap<Integer, Method> ();
+            this.sType  = SkillPHA.class;
+        
+        // only allowing initialization of HashMap to concrete classes
+        if ( s.getClass() != Skill.class )
+            this.map    = new HashMap<Integer, Method> ();
     }
     
     public HashMap<Integer, Method> getMap ()
@@ -64,10 +68,9 @@ public class SkillMapper {
         return  this.map.get(key);
     }
     
-    public void 
-    setSkill (  int     key, 
-                String  skillName ) throws NoSuchMethodException
+    public void setSkill ( int key, String skillName ) 
+    throws NoSuchMethodException
     {
-        map.put ( key, skillType.getMethod ( skillName ) );
+        map.put ( key, sType.getMethod ( skillName ) );
     }
 }

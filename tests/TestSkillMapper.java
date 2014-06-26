@@ -30,7 +30,7 @@ public class TestSkillMapper {
     private static final String PHA_METHOD_1    = "PUNCH";
     
     public static void main ( String[] args )
-        throws  IllegalAccessException,
+    throws  IllegalAccessException,
             InvocationTargetException,
             NoSuchMethodException
     {

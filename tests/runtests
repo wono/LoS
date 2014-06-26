@@ -1,7 +1,7 @@
 ################################################
 #   SH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/06/24                                  #
+#       last modified:  2014/06/25                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -46,8 +46,7 @@ case ${1} in
     
     monsters        )   RUN_TEST TestMonsters       ;;
     
-    skills          )   RUN_TEST TestSkills
-                        RUN_TEST TestSkillMapper    ;;
-    
+    skills          )   RUN_TEST TestSMapDrive      ;;
+                        
     *)  echo $1 is invalid module name for testing. ;;
 esac

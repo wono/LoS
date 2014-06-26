@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : SKILL BFO
  *                                                                  *
- *      last modified:  2014/06/24                                  *
+ *      last modified:  2014/06/25                                  *
  *      first wrote:    2014/06/21                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -32,7 +32,7 @@ public class SkillBFO   extends     Skill
     // preventing to be initialize from outside
     public SkillBFO () {}
     
-    // singletone    
+    // singleton    
     public static SkillBFO INSTANCE ()
     {
         if ( null == instance )

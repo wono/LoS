@@ -1,40 +1,26 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ABSTRACT : SKILL
+ *  JAVA : KEY
  *                                                                  *
  *      last modified:  2014/06/25                                  *
- *      first wrote:    2014/06/23                                  *
+ *      first wrote:    2014/06/25                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package skills;
+package controllers;
 
-/**
- *  Representing each skill.
- */
-public class Skill<T> {
+public class Key<T> {
 
     private T t;
-
-    public Skill    ( T t )
-    {
-        this.t  = t;
-    }
     
-    public void set ( T t )
+    public Key ( T t )
     {
         this.t  = t;
     }
 
-    public T get  ()
+    public T get ()
     {
         return  t;
-    }
-
-    @Override
-    public String toString ()
-    {
-        return  (String) t;
     }
 }

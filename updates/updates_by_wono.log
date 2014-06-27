@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO
  *                                                                  *
- *      last modified:  2014/06/24                                  *
+ *      last modified:  2014/06/25                                  *
  *      first wrote:    2014/06/14                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -9,6 +9,18 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 Dev progress by wono will be logged within this file.
+
+
+2014/06/25
+==========
+-   Module 'controllers' and 'skills' are modified to provide more 
+    flexible mapping between keys and skills. For the module 
+    'controllers', a new class - 'Key' is added. For the module 
+    'skills', a new file 'SMapDrive' is added. The SMapDrive is new 
+    driver class to map skills with keys and it will replace 
+    'SkillMapper' class soon. The 'Skill' class is modified to 
+    interect with the 'SmapDrive' class. Test module is also updated 
+    to test it, and a test file - 'TestSMapDriver.java' is added.
 
 
 2014/06/24

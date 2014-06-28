@@ -27,8 +27,6 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-package libraries;
-
 import  static java.lang.System.out;
 
 import  java.io.File;
@@ -39,8 +37,8 @@ import  javax.xml.bind.JAXBException;
 import  javax.xml.bind.Unmarshaller;
 
 /**
- *  WXMLParser is a tiny program that enables to parse a XML record 
- *  file to a Java object. It uses JAXB.
+ *  WXMLParser is a simple helper class to parse a XML record file 
+ *  into a Java object by using JAXB.
  *
  *  Here is an example to get an object from a XML record file:
  *      MyClass o = WXMLParser.GET ( "MyXML.xml", MyClass.class );
@@ -52,12 +50,12 @@ public class WXMLParser {
     // Prevents being initialized.
     private WXMLParser(){}
     
-    public static <T> T GET ( String filePath, Class<T> c )
+    public static <T> T GET ( String xmlPath, Class<T> c )
     {
         try {
             return  c.cast( JAXBContext.newInstance(c)
                                 .createUnmarshaller()
-                                .unmarshal(new File(filePath))  );
+                                .unmarshal(new File(xmlPath)) );
             
         } catch ( JAXBException e ) {
             

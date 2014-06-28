@@ -27,7 +27,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-pacakge libraries;
+package libraries;
 
 import  java.io.File;
 import  java.util.ArrayList;

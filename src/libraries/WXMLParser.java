@@ -27,8 +27,6 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-package libraries;
-
 import  java.io.File;
 import  java.util.ArrayList;
 
@@ -79,9 +77,9 @@ public class WXMLParser {
     
     /**
      *  @param <String> xml record file path including its extention
-     *  @param <Object> record onbject to push into a xml file
+     *  @param <T> any type of record object to push into a xml file
      */
-    public static <T> void PUSH ( String xmlPath, Object o )
+    public static <T> void PUSH ( String xmlPath, T o )
     {
         try {
 

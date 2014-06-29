@@ -86,7 +86,7 @@ public class WXMLParser {
 
             Marshaller m = JAXBContext.newInstance(o.getClass())
                                 .createMarshaller();
-            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT,true);
+            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
             m.marshal(o, new File(xmlPath));
                         
         } catch ( JAXBException e ) {

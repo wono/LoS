@@ -37,7 +37,7 @@ function CLEAN ()
 
 function RUN_TEST ()
 {
-    COMPILE $1 && RUN $1
+    COMPILE $1 && RUN $1 && CLEAN
 }
 
 case ${1} in

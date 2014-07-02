@@ -1,0 +1,13 @@
+=========================
+  TEST : ERROR HANDLERS  
+=========================
+
+TEST 1 : General Error Printing
+-------------------------------
+An error occurs - LoS ERROR: : TEMS0401.
+An error occurs - LoS ERROR: : TEMS0301.
+
+TEST 2 : Programmer-fault Error Printing
+----------------------------------------
+Note: the error message should be logged at 'tests/logs/TestErrorHandlers.err'.
+

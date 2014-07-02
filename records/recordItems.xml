@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList>
+    <item>
+        <bonusPoint>10</bonusPoint>
+        <name>Pencil</name>
+    </item>
+    <item>
+        <bonusPoint>20</bonusPoint>
+        <name>Pen</name>
+    </item>
+    <item>
+        <bonusPoint>5</bonusPoint>
+        <name>Eraser</name>
+    </item>
+        <item>
+        <bonusPoint>100</bonusPoint>
+        <name>Empty Bear Can</name>
+    </item>
+</itemList>

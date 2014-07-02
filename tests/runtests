@@ -1,7 +1,7 @@
 ################################################
 #   SH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/06/25                                  #
+#       last modified:  2014/07/01                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -11,6 +11,7 @@
 # $1: Module name to test. Currently available modules are:
 #       - hero
 #       - error_handlers
+#       - items
 #       - monstesrs
 #       - skills
 
@@ -36,13 +37,15 @@ function CLEAN ()
 
 function RUN_TEST ()
 {
-    COMPILE $1 && RUN $1 && CLEAN
+    COMPILE $1 && RUN $1
 }
 
 case ${1} in
     hero            )   RUN_TEST TestHero           ;;
 
     error_handlers  )   RUN_TEST TestErrorHandlers  ;;
+    
+    items           )   RUN_TEST DemoItems          ;;
     
     monsters        )   RUN_TEST TestMonsters       ;;
     

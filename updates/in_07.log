@@ -1,0 +1,18 @@
+/* * * * * * * * * * * * * * * * * * * * * * * *        
+ *  DEV PROGRESS : UPDATES_BY_WONO IN JULY
+ *                                                                  *
+ *      last modified:  2014/07/01                                  *
+ *      first wrote:    2014/07/01                                  *
+ *                                                                  *
+ *      wono (wonho lim: wono@live.com)                             *
+ *                                                                  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+2014/07/01
+==========
+-   A feature tesing 'items' module is added at 'Makefile'. Minor 
+    modification are added there.
+
+-   A new module - 'items' is added. A xml record file - 
+    'recordItems.xml' is added. A test file - 'DemoItems.java' is 
+    added to test them. Minor changes are updated.

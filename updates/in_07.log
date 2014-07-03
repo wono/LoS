@@ -8,10 +8,17 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+
 2014/07/02
 ==========
 -   A new module - 'maps' is added. A file 'Room.java' is moved into 
     'maps' from 'chambers'. A file - 'maps/RoomList.java' is added. 
+
+-   A library file - 'RecordPath.java' is added to more easily get xml 
+    record file path when writing test files. A test file - 
+    'DemoMaps.java' is added to test 'maps' module. Minor chages are 
+    updated.
+
 
 2014/07/01
 ==========

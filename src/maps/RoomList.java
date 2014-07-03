@@ -13,13 +13,11 @@ package maps;
 import  java.util.List;
 
 import  javax.xml.bind.annotation.XmlElement;
-import  javax.xml.bind.annotation.XmlElementWrapper;
 import  javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class RoomList {
 
-    @XmlElementWrapper
     @XmlElement ( name = "room" )
     private List<Room> list;
     

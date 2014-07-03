@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : UINPUT
  *                                                                  *
- *      last modified:  2014/06/18                                  *
+ *      last modified:  2014/07/02                                  *
  *      first wrote:    2014/06/18                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -41,12 +41,12 @@ class UInput implements PromptMessage {
     private static String _pmsg_get ( TPrmpt t )
     {
         switch ( t ) {
-            case ATTACK_RUN:     return PMSG_ATTACK_RUN;
-            case DIRECTIONS:     return PMSG_DIRECTIONS;
+            case ATTACK_RUN:    return PMSG_ATTACK_RUN;
+            case DIRECTIONS:    return PMSG_DIRECTIONS;
+            
+            // never happens
+            default:            return null;
         }
-        
-        // never happens
-        return  null;
     }
 
 }

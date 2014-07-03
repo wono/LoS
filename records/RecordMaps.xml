@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<roomList>
+    <list>
+        <room>
+            <description>Smelling of beers</description>
+            <name>A Student Pub</name>
+        </room>
+        <room>
+            <description>Looks like students are sleeping</description>
+            <name>A Lecture Room</name>
+        </room>
+        <room>
+            <description>Practice, practice, and practice</description>
+            <name>A Lab</name>
+        </room>
+        <room>
+            <description>Smelling of buggers</description>
+            <name>A bugger shop</name>
+        </room>
+    </list>
+</roomList>

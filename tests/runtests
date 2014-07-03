@@ -1,7 +1,7 @@
 ################################################
 #   SH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/07/01                                  #
+#       last modified:  2014/07/02                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -12,6 +12,7 @@
 #       - hero
 #       - error_handlers
 #       - items
+#       - maps
 #       - monstesrs
 #       - skills
 
@@ -46,6 +47,8 @@ case ${1} in
     error_handlers  )   RUN_TEST TestErrorHandlers  ;;
     
     items           )   RUN_TEST DemoItems          ;;
+    
+    maps            )   RUN_TEST DemoMaps           ;;
     
     monsters        )   RUN_TEST TestMonsters       ;;
     

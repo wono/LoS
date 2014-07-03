@@ -8,6 +8,11 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+2014/07/02
+==========
+-   A new module - 'maps' is added. A file 'Room.java' is moved into 
+    'maps' from 'chambers'. A file - 'maps/RoomList.java' is added. 
+
 2014/07/01
 ==========
 -   A feature tesing 'items' module is added at 'Makefile'. Minor 

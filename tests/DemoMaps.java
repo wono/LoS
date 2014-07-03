@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : DEMO MAPS
  *                                                                  *
- *      last modified:  2014/07/02                                  *
+ *      last modified:  2014/07/03                                  *
  *      first wrote:    2014/07/02                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -22,18 +22,15 @@ public class DemoMaps {
 
     public static void main ( String[] args )
     {
-        int i = 0;
-                
         RoomList ls 
             =   WXMLParser.PULL(
                     RecordPath.GET("RecordMaps"),
                     RoomList.class
                 );
-
-        for ( Room r : ls.get() ) {
-            out.printf ("Room #%d %s: %s\n",
-                ++i, r.getName(), r.getDescription()); 
-        }
+        
+        ls.get().stream()
+                .forEach(r -> out.printf("Room %s: %s\n",
+                    r.getName(), r.getDescription()));
     }
 
 }

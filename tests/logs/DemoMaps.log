@@ -2,31 +2,31 @@ Room: A Student Pub - Smelling of beers.
 =======
   MAP  
 =======
-						N[null]
-	E[null]									W[A bugger shop]
-						S[A Lecture Room]
+                                    null
+                null                           A bugger shop
+                          A Lecture Room
 
 Room: A Lecture Room - Looks like students are sleeping.
 =======
   MAP  
 =======
-						N[A Student Pub]
-	E[null]									W[A Lab]
-						S[null]
+                           A Student Pub
+                null                                   A Lab
+                                    null
 
 Room: A Lab - Practice, practice, and practice.
 =======
   MAP  
 =======
-						N[null]
-	E[A Lecture Room]									W[null]
-						S[A bugger shop]
+                                    null
+      A Lecture Room                                    null
+                           A bugger shop
 
 Room: A bugger shop - Smelling of buggers.
 =======
   MAP  
 =======
-						N[A Lab]
-	E[A Student Pub]									W[null]
-						S[null]
+                                   A Lab
+       A Student Pub                                    null
+                                    null
 

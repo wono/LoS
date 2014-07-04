@@ -37,15 +37,14 @@ public class DemoMaps {
                         + "=======\n"
                         + "  MAP  \n"
                         + "=======\n"
-                        + "\t\t\t\t\t\tN[%s]\n"
-                        + "\tE[%s]\t\t\t\t\t\t\t\t\tW[%s]\n"
-                        + "\t\t\t\t\t\tS[%s]\n\n",
+                        + "%20s%20s\n"
+                        + "%20s%20s%20s\n"
+                        + "%20s%20s\n\n",
                         r.getName(),
                         r.getDescription(),
-                        r.getNorth(),
-                        r.getEast(),
-                        r.getWest(),
-                        r.getSouth())
+                        " ", r.getNorth(),
+                        r.getEast(), " ", r.getWest(),
+                        " ", r.getSouth())
                 );
     }
 

@@ -8,6 +8,18 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+2014/07/03
+==========
+-   Test files - 'DemoItems.java' and 'DemoMaps.java' are modified. 
+    Now they use aggretate operations with lambda expressions istead 
+    of iterators. Minor chages are updated.
+
+-   Formats of record file - 'RecordMaps.xml' is modified.
+
+-   The module - 'maps' is upgraded. Now it has a feature linking with 
+    other rooms as its directions (north, south, east, west). Its test 
+    file - DemoMaps.java is also updated.
+
 
 2014/07/02
 ==========

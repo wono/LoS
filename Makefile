@@ -13,6 +13,7 @@ all:
 	cd tests && ./runtests error_handlers
 	cd tests && ./runtests hero
 	cd tests && ./runtests items	
+	cd tests && ./runtests maps	
 	cd tests && ./runtests monsters
 	make view
 	
@@ -32,6 +33,10 @@ test_hero:
 
 test_items:
 	cd tests && ./runtests items
+	make view
+
+test_maps:
+	cd tests && ./runtests maps
 	make view
 	
 test_monsters:

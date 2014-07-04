@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : ROOM LIST
  *                                                                  *
- *      last modified:  2014/07/02                                  *
+ *      last modified:  2014/07/03                                  *
  *      first wrote:    2014/07/02                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -29,6 +29,11 @@ public class RoomList {
     public List<Room> get ()
     {
         return  list;
+    }
+    
+    public Room getE ( int index )
+    {
+        return  list.get(index);
     }
 
 }

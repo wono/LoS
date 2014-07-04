@@ -39,6 +39,26 @@ public class Room {
         name = n;
     }
     
+    public void setNorth ( Room r )
+    {
+        north = r;
+    }
+    
+    public void setSouth ( Room r )
+    {
+        south = r;
+    }
+    
+    public void setEast ( Room r )
+    {
+        east = r;
+    }
+    
+    public void setWest ( Room r )
+    {
+        west = r;
+    }
+    
     public String getDescription ()
     {
         return  description;
@@ -48,4 +68,30 @@ public class Room {
     {
         return  name;
     }
+    
+    public Room getNorth ()
+    {
+        return  north;
+    }
+    
+    public Room getSouth ()
+    {
+        return  south;
+    }
+    
+    public Room getEast ()
+    {
+        return  east;
+    }
+    
+    public Room getWest ()
+    {
+        return  west;
+    }
+
+    @Override
+    public String toString ()
+    {
+        return  name;
+    }    
 }

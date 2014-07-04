@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : RANDOMMONSTERGEN
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/07/04                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -37,10 +37,12 @@ public class RandomMonsterGen implements MTIndexInterface {
     public static Monster GET()
     {
         switch ( rnGen() ) {
-            case MTI_ANIMAL_GIANT_DUCK: return new GiantDuck    ();
-            case MTI_HUMAN_GUN_MAN:     return new GunMan       ();
-            case MTI_HUMAN_KNIFE_MAN:   return new KnifeMan     ();
-            default:                    return new SquirrelGold ();
+            case MTI_ANIMAL_GIANT_DUCK:     return new GiantDuck();
+            case MTI_HUMAN_GUN_MAN:         return new GunMan();
+            case MTI_HUMAN_KNIFE_MAN:       return new KnifeMan();
+            case MTI_ANIMAL_SQUIRREL_GOLD:  return new SquirrelGold();
+        
+            default:                        return null;
         }
     }
 }

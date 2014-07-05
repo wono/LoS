@@ -16,7 +16,7 @@ import  java.util.function.Consumer;
 /**
  *  Wrapper of static method for generics with lambda expression
  */
-public class WProces {
+public class WProcess {
 
     /**
      *  @param T any type of single object

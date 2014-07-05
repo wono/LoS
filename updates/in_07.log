@@ -8,6 +8,21 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+2014/07/04
+==========
+-   A file - 'monsters/RandomMonsterGen.java' is modified. Not it has 
+    probability of returning null in case that a room has no monster.
+    
+-   A file 'maps/Room.java' is modified. Now it has a chance to 
+    generate randomized monster within each it's instance. It has also 
+    feature to set or erase (in case of assigning null) a monster 
+    object manually. Format of the source code is also changed.
+    
+-   A library file 'WProces.java' is added. This file has a static 
+    generic method being used with lambda expressions for better 
+    code-reusability. 
+    
+
 2014/07/03
 ==========
 -   Test files - 'DemoItems.java' and 'DemoMaps.java' are modified. 

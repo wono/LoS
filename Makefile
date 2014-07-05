@@ -1,8 +1,8 @@
 ################################################
 #   MAKEFILE:
-#       LOS - Monsters module testing program                       #
+#       A helper program for testing LOS modules                    #
 #                                                                   #
-#       last modified:  2014/07/01                                  #
+#       last modified:  2014/07/04                                  #
 #       first wrote:    2014/06/09                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #

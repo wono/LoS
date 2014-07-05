@@ -1,5 +1,5 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : WPROCESSOR
+ *  JAVA : WPROCESS
  *                                                                  *
  *      last modified:  2014/07/04                                  *
  *      first wrote:    2014/07/04                                  *

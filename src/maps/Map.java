@@ -15,7 +15,7 @@ import  java.util.List;
 import  libraries.RecordPath;
 import  libraries.WXMLParser;
 
-import  maps.Relation;
+import  maps.types.Relation;
 import  maps.Room;
 import  maps.RoomLinker;
 import  maps.RoomList;

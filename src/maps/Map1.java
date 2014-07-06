@@ -19,6 +19,7 @@ public class Map1 extends Map {
         setRoomLocations();
     }
     
+    // singleton    
     public static List<Room> getRoomList ()
     {
         if ( null == instance ) instance = new Map1();

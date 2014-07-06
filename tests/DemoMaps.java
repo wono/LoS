@@ -60,4 +60,5 @@ public class DemoMaps {
         RoomLinker.SET(l.get(2), Relation.NAS, l.get(3));
         RoomLinker.SET(l.get(2), Relation.WAE, l.get(1));
     }
+
 }

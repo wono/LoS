@@ -1,47 +1,45 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, DATA : MAP1
+ *  JAVA : MAP1
  *                                                                  *
- *      last modified:  2014/07/05                                  *
- *      first wrote:    2014/07/05                                  *
+ *      last modified:  2014/07/06                                  *
+ *      first wrote:    2014/07/06                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package data.maps;
+package maps;
 
-import  java.util.List;
+public class Map1 extends Map {
 
-import  libraries.RecordPath;
-import  libraries.WXMLParser;
+    private static Map1 instance = null;
 
-import  maps.Relation;
-import  maps.Room;
-import  maps.RoomLinker;
-import  maps.RoomList;
-
-public class Map1 {
-
-    static private Map1 instance = null;
+    private Map1 ()
+    {
+        setRoomLocations();
+    }
+    
+    public static List<Room> getRoomList ()
+    {
+        if ( null == instance ) instance = new Map1();
         
+        return  rList;
+    }
+    
     /**
      *          Lab         -       Lecture
      *           |                      |
      *      Bugger shop     -       Student Pub
      */
-    private Map1 ()
+    @Override
+    private void setRoomLocations ()
     {
-        RoomList ls =   WXMLParser.PULL(
-                            RecordPath.GET("RecordMaps"),
-                            RoomList.class
-                        );
+        rList = getRoomRecordAsList ("RecordMaps");
         
-        List<Room> l = ls.get();
-        
-        RoomLinker.SET(l.get(1), Relation.NAS, l.get(0));
-        RoomLinker.SET(l.get(2), Relation.NAS, l.get(3));
-        RoomLinker.SET(l.get(2), Relation.WAE, l.get(1));
-        RoomLinker.SET(l.get(3), Relation.WAE, l.get(0));
+        RoomLinker.SET(rList.get(1), Relation.NAS, rList.get(0));
+        RoomLinker.SET(rList.get(2), Relation.NAS, rList.get(3));
+        RoomLinker.SET(rList.get(2), Relation.WAE, rList.get(1));
+        RoomLinker.SET(rList.get(3), Relation.WAE, rList.get(0));
     }
 
 }

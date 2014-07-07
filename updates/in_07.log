@@ -8,6 +8,41 @@
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
+2014/07/06
+==========
+-   A new file 'Map.java' is added at 'maps' module. It is abstract 
+    class that enables to set room locations of a map from external 
+    xml data read within its child classes. Each child class 
+    represents each stage of the game map.
+    
+-   A file 'Relation.java' is moved into 'maps/types' from 'maps/'.
+
+-   A enumeration file 'Directions.java' is added at 'maps/types'. It 
+    represents rooms that are availabe to move from each room of a 
+    map. It may be used as prompting user key commands later on.
+    
+-   A new library 'WConsume.java' is added. WConsume is a set of 
+    static generic methods that is mixture of the standard functional 
+    interface - Consumer with other standard functional interfaces to 
+    simply manipulate code that have particular patterns with the 
+    lambda expressions.
+    
+-   A file 'controllers/Direction.java' is updated. Now it has a 
+    feature that moving arround rooms with directions specified by 
+    user input.
+    
+-   A file 'Control.java' is added at 'controllers' module. It has a 
+    static generic method to manipulate basic moving control flow 
+    among objects. 
+
+
+2014/07/05
+==========
+-   A file 'Map1.java' is added at 'maps' module. The external data 
+    from 'RecordMaps.xml' is combined, and each room location is set 
+    up there as a Stage 1 (Map 1) of game.
+
+
 2014/07/04
 ==========
 -   A file - 'monsters/RandomMonsterGen.java' is modified. Not it has 

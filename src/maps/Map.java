@@ -24,7 +24,7 @@ public abstract class Map {
     
     protected String        mapName;
     protected List<Room>    rList;
-
+    
     protected static List<Room>
     getRoomRecordAsList ( String recordTitle )
     {

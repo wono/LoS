@@ -15,10 +15,10 @@ import  java.util.List;
 import  libraries.RecordPath;
 import  libraries.WXMLParser;
 
-import  maps.types.Relation;
 import  maps.Room;
 import  maps.RoomLinker;
 import  maps.RoomList;
+import  maps.types.Relation;
 
 public class DemoMaps {
 

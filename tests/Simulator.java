@@ -27,10 +27,11 @@ public class Simulator {
         
         Room.setCurrentRoom(rList.get(0));
         
-        out.println(rList.get(0).getDescription());
-        
-        Direction.CTRL(rList.get(0));
-        
+        while (true) {
+            out.println(Room.getCurrentRoom().getDescription());
+            
+            Direction.CTRL(Room.getCurrentRoom());
+        }
     }
 
 }

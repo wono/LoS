@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : CONTROL
  *                                                                  *
- *      last modified:  2014/07/06                                  *
+ *      last modified:  2014/07/08                                  *
  *      first wrote:    2014/07/06                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -10,17 +10,20 @@
 
 package controllers;
 
+import  maps.Room;
+
 /**
- *  Wrapper of static generic method to manipulate basic control 
+ *  This is a wrapper of static method to manipulate basic control 
  *  pattern.
  */
 public class Control {
 
-    public static <T> boolean MOVE ( T current, T next )
+    public static boolean MOVE ( Room current, Room next )
     {
         if ( null == next ) return false;
         
-        current = next;     return true;        
+        Room.setCurrentRoom(next);  
+        return true;        
     }
 
 }

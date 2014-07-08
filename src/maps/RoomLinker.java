@@ -10,6 +10,8 @@
 
 package maps;
 
+import  maps.types.Relation;
+
 public class RoomLinker {
 
     /**

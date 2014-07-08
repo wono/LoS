@@ -10,6 +10,10 @@
 
 package maps;
 
+import  java.util.List;
+
+import  maps.types.Relation;
+
 public class Map1 extends Map {
 
     private static Map1 instance = null;
@@ -24,7 +28,7 @@ public class Map1 extends Map {
     {
         if ( null == instance ) instance = new Map1();
         
-        return  rList;
+        return  instance.rList;
     }
     
     /**
@@ -33,7 +37,7 @@ public class Map1 extends Map {
      *      Bugger shop     -       Student Pub
      */
     @Override
-    private void setRoomLocations ()
+    protected void setRoomLocations ()
     {
         rList = getRoomRecordAsList ("RecordMaps");
         

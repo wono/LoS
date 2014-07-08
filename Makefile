@@ -16,6 +16,13 @@ all:
 	cd tests && ./runtests maps	
 	cd tests && ./runtests monsters
 	make view
+
+simulate:
+	cd tests &&\
+	javac Simulator.java -sourcepath ../src -d ../bin
+	cd bin && java Simulator
+	make clean_bin
+
 	
 test_controllers:
 	cd tests &&\

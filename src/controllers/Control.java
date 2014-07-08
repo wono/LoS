@@ -16,7 +16,6 @@ package controllers;
  */
 public class Control {
 
-    
     public static <T> boolean MOVE ( T current, T next )
     {
         if ( null == next ) return false;

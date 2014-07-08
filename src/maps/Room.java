@@ -12,6 +12,8 @@ import  monsters.RandomMonsterGen;
 @XmlRootElement ( name = "Map" )
 public class Room {
 
+    private static Room     current;
+
     private String  description;
     private String  name;
     
@@ -35,6 +37,9 @@ public class Room {
         monster     = RandomMonsterGen.GET();
     }
     
+    public static void setCurrentRoom(Room r)   { current = r;      }
+    public static Room getCurrentRoom()         { return current;   }
+
     public void setDescription  ( String d  ) { description = d; }
     public void setName         ( String n  ) { name        = n; }
     public void setMonster      ( Monster m ) { monster     = m; }
@@ -53,4 +58,5 @@ public class Room {
 
     @Override
     public String   toString        ()  { return name;          }
+
 }

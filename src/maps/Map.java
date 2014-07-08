@@ -1,14 +1,14 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : MAP
  *                                                                  *
- *      last modified:  2014/07/06                                  *
+ *      last modified:  2014/07/08                                  *
  *      first wrote:    2014/07/05                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
-package data.maps;
+package maps;
 
 import  java.util.List;
 

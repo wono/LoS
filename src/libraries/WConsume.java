@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : WCONSUME
  *                                                                  *
- *      last modified:  2014/07/04                                  *
+ *      last modified:  2014/07/09                                  *
  *      first wrote:    2014/07/04                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -48,7 +48,7 @@ public class WConsume {
     IF_ELSE (   T t,
                 Predicate<T> filter,
                 Consumer<T> action1,
-                Consumer<T> action2 )
+                Consumer<T> action2     )
     {
         if (filter.test(t)) action1.accept(t);
         else                action2.accept(t);

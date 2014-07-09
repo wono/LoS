@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA : DIRECTION
  *                                                                  *
- *      last modified:  2014/07/08                                  *
+ *      last modified:  2014/07/09                                  *
  *      first wrote:    2014/06/19                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -18,6 +18,7 @@ import  libraries.WConsume;
 
 import  controllers.Control;
 import  controllers.interfaces.CtrlKeyIndex;
+import  controllers.interfaces.Dialogue;
 import  controllers.types.TPrmpt;
 import  maps.Room;
 
@@ -25,8 +26,10 @@ import  maps.Room;
  *  This is a wrapper of a static method that enables handling control 
  *  flow for moving around rooms by prompting directions as input keys 
  *  from the user.
+ *
+ *  @author Wonho Lim
  */
-public class Direction implements CtrlKeyIndex {
+public class Direction implements CtrlKeyIndex, Dialogue {
 
     // Prevents being initialized
     private Direction () {}
@@ -46,8 +49,8 @@ public class Direction implements CtrlKeyIndex {
     public static void CTRL ( Room current )
     {
         char    c   = UInput.GET_KEY ( TPrmpt.DIRECTIONS );
-        String  s   = "You cannot go there.";
-        
+        char    s   = Dialogue.MOVE_DENY;
+                
         switch ( Character.toUpperCase ( c ) ) {
 
             case CKDR_NORTH:

@@ -49,7 +49,7 @@ public class Direction implements CtrlKeyIndex, Dialogue {
     public static void CTRL ( Room current )
     {
         char    c   = UInput.GET_KEY ( TPrmpt.DIRECTIONS );
-        char    s   = Dialogue.MOVE_DENY;
+        String  s   = Dialogue.MOVE_DENY;
                 
         switch ( Character.toUpperCase ( c ) ) {
 

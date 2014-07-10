@@ -11,13 +11,15 @@
 package controllers;
 
 import  hero.Hero;
+import  maps.Room;
 import  monsters.Monster;
 
 public class Combat {
 
-    public static void INIT ( Hero h, Monster m )
+    public static void INIT ( Room r )
     {
-        m.die();
+        r.getMonster().die();
+        r.setMonster(null);
     }
 
 }

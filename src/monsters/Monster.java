@@ -24,19 +24,27 @@ public abstract class Monster {
      */
     protected Monster ()
     {
-        this.description    = MTDescription.GET ( this );
-        this.name           = MTName.GET        ( this );
+        description = MTDescription.GET ( this );
+        name        = MTName.GET        ( this );
     }
 
-    public void describe () 
+    public String getDescription()
     {
-        out.printf("%s.\n", this.description);
+        return  description;
     }
     
     public void die ()
     {
-        out.printf("%s is dead.\n", this);
-        this = null;
+        try {
+
+            out.printf("%s is dead.\n", this);
+            this.finalize();
+            
+        } catch ( Throwable e ) {
+        
+            e.printStackTrace();
+            
+        }
     }
     
     @Override

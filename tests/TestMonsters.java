@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, TEST : TESTMONSTERS
  *                                                                  *
- *      last modified:  2014/06/20                                  *
+ *      last modified:  2014/07/09                                  *
  *      first wrote:    2014/06/09                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -10,8 +10,8 @@
 
 import static java.lang.System.out;
 
+import maps.Room;
 import monsters.Monster;
-import monsters.MonsterInit;
 import monsters.RandomMonsterGen;
 
 class TestMonsters {
@@ -25,31 +25,33 @@ class TestMonsters {
         out.println ( "===================" );
         out.println ();
 
-        test_monster_init   ();
-        out.println ();
-        test_random_monster ();
-        out.println ();
-    }
-    
-    private static void test_monster_init ()
-    {
-        int     i   = 0;
-
-        out.println ( "TEST 1 : MonsterInit" );
-        out.println ( "--------------------" );
+        test_random_monster();
+        out.println();
         
-        while ( i++ < TEST_TIME )
-            out.printf ( "%s\n", new MonsterInit() );
+        test_monsters_with_rooms();
+        out.println();
     }
     
     private static void test_random_monster ()
     {
         int     i   = 0;
         
-        out.println ( "TEST 2 : RandomMonsterGen" );
+        out.println ( "TEST 1 : RandomMonsterGen" );
         out.println ( "-------------------------" );
         
         while ( i++ < TEST_TIME )
             out.printf ( "%s\n", RandomMonsterGen.GET() );
+    }
+
+    private static void test_monsters_with_rooms ()
+    {
+        int     i   = 0;
+
+        out.println ( "TEST 2 : MonsterWithRooms" );
+        out.println ( "-------------------------" );
+        
+        while ( i++ < TEST_TIME ) {
+            out.printf ( "%s\n", new Room().getMonster());
+        }
     }
 }

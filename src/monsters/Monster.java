@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *
  *  JAVA ABSTRACT : MONSTER
  *                                                                  *
- *      last modified:  2014/06/14                                  *
+ *      last modified:  2014/07/10                                  *
  *      first wrote:    2014/06/10                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -18,10 +18,9 @@ public abstract class Monster {
     protected String name;
     
     /**
-     *  preventing to be initialized from outside of this family. 
-     *  Use either RandomMonsterGen.GET() to get its concrete instance 
-     *  or new MonsterInit() to process a concrete instance with some 
-     *  house-keeping play.
+     *  Preventing to be initialized from outside of this family. 
+     *  Please use RandomMonsterGen.GET() to get its concrete 
+     *  instance instead.
      */
     protected Monster ()
     {
@@ -31,7 +30,13 @@ public abstract class Monster {
 
     public void describe () 
     {
-        out.printf ( "%s\n", this.description );
+        out.printf("%s.\n", this.description);
+    }
+    
+    public void die ()
+    {
+        out.printf("%s is dead.\n", this);
+        this = null;
     }
     
     @Override

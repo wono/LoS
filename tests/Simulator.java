@@ -38,7 +38,8 @@ public class Simulator {
                 out.printf("%s is here!\n", r.getMonster());
                 AttackOrRun.CTRL();
             }
-            Direction.CTRL(Room.getCurrentRoom());
+            
+            Direction.CTRL(r);
         }
     }
 

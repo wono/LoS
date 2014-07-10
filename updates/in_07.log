@@ -9,6 +9,16 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 
+2014/07/10
+==========
+-   A file 'monsters/Monster.java' is updated. Now monster can die.
+
+-   A file 'Combat.java' is added at 'controllers/'.
+
+-   A test file 'Simulator.java' is updated. Now it has a basic combat 
+    flow. Minor changes are modified.
+
+
 2014/07/09
 ==========
 -   An interface 'Dialogue.java' is added at 'controllers/interfaces/'.

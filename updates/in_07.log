@@ -1,12 +1,30 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO IN JULY
  *                                                                  *
- *      last modified:  2014/07/01                                  *
+ *      last modified:  2014/07/09                                  *
  *      first wrote:    2014/07/01                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+
+2014/07/09
+==========
+-   An interface 'Dialogue.java' is added at 'controllers/interfaces/'.
+
+-   A test file 'Simulator.java' is updated. Now it promts attack/run 
+    if a monster exists at a room.
+    
+-   A test file 'TestMonsters.java' is updated to test monsters with 
+    rooms.
+
+2014/07/08
+==========
+-   A new test file Simuloator.java is added. Overall game flow as a 
+    junction of multiple modules will be tested here. Minor issues are 
+    fixed.
+
 
 2014/07/06
 ==========

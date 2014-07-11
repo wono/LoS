@@ -2,7 +2,7 @@
 ################################################
 #   BASH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/07/02                                  #
+#       last modified:  2014/07/11                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -53,7 +53,7 @@ case ${1} in
     
     monsters        )   RUN_TEST TestMonsters       ;;
     
-    skills          )   RUN_TEST TestSMapDrive      ;;
+    skills          )   RUN_TEST DemoSkills         ;;
                         
     *)  echo $1 is invalid module name for testing. ;;
 esac

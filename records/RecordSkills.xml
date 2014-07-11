@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skillList>
+    <skill>
+        <description>A basic physical attack</description>
+        <name>Punch</name>
+        <power>50</power>
+    </skill>
+    <skill>
+        <description>A powerfull physical attack</description>
+        <name>Kick</name>
+        <power>80</power>
+    </skill>
+    <skill>
+        <description>The ultimate...</description>
+        <name>Bite</name>
+        <power>200</power>
+    </skill>
+    <skill>
+        <description>Offensive buff...</description>
+        <name>Sweating</name>
+        <power>10</power>
+    </skill>
+</skillList>

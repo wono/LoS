@@ -16,15 +16,15 @@ import  javax.xml.bind.annotation.XmlRootElement;
 public class Skill {
 
     private int     power;
-    private String  discription;
+    private String  description;
     private String  name;
     
     public Skill () {}
     
-    public Skill ( String name, String description, int name  )
+    public Skill ( String name, String description, int power  )
     {
         this.name           = name;
-        this.discription    = discrpiton;
+        this.description    = description;
         this.power          = power; 
     }
 
@@ -39,6 +39,6 @@ public class Skill {
     @Override
     public String toString ()
     {
-        return  sName;
+        return  name;
     }
 }

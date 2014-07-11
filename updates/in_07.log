@@ -9,6 +9,20 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
 
 
+2014/07/11
+==========
+-   A file 'skills/Skill.java' is modified. Now it is no longer 
+    generics class and has specific filed members.
+    
+-   A file 'SkillList.java' is added at 'skills/' module. It is a 
+    wrapper class to manipulate reading/writing external xml record 
+    file.
+    
+-   A new tests file 'DemoSkills.java' is added. A new record file 
+    'RecordSkills.xml' is added. Test program - 'runtests' is updated 
+    to test them.
+
+
 2014/07/10
 ==========
 -   A file 'monsters/Monster.java' is updated. Now monster can die.

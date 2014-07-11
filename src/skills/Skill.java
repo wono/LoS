@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, ABSTRACT : SKILL
  *                                                                  *
- *      last modified:  2014/06/25                                  *
+ *      last modified:  2014/07/11                                  *
  *      first wrote:    2014/06/23                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -10,31 +10,35 @@
 
 package skills;
 
-/**
- *  Representing each skill.
- */
-public class Skill<T> {
+import  javax.xml.bind.annotation.XmlRootElement;
 
-    private T t;
+@XmlRootElement ( name = "SkillList" )
+public class Skill {
 
-    public Skill    ( T t )
-    {
-        this.t  = t;
-    }
+    private int     power;
+    private String  discription;
+    private String  name;
     
-    public void set ( T t )
+    public Skill () {}
+    
+    public Skill ( String name, String description, int name  )
     {
-        this.t  = t;
+        this.name           = name;
+        this.discription    = discrpiton;
+        this.power          = power; 
     }
 
-    public T get  ()
-    {
-        return  t;
-    }
-
+    public void setPower        ( int i     ) { power         = i; }
+    public void setDescription  ( String s  ) { description   = s; }
+    public void setName         ( String s  ) { name          = s; }
+    
+    public int      getPower        () { return power;          }
+    public String   getDescription  () { return description;    }
+    public String   getName         () { return name;           }
+    
     @Override
     public String toString ()
     {
-        return  (String) t;
+        return  sName;
     }
 }

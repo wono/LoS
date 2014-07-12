@@ -1,7 +1,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  JAVA, INTERFACE : PROMPTMESSAGE
  *                                                                  *
- *      last modified:  2014/06/18                                  *
+ *      last modified:  2014/07/11                                  *
  *      first wrote:    2014/06/18                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
@@ -24,4 +24,7 @@ public interface PromptMessage {
         
     static final String PMSG_DIRECTIONS
         = "Where to go";
+    
+    static final String PMSG_KEY_SKILLS
+        = "What skill to use";
 }

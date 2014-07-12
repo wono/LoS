@@ -24,18 +24,17 @@ import  controllers.types.TPrmpt;
  *  Note that 'message' is String type of message to prompt the user 
  *  input.
  */
-class UInput implements PromptMessage {
+public class UInput implements PromptMessage {
     
-    // Prevents being initalized
+    // Prevents being initialized.
     private UInput () {}
     
     public static char GET_KEY ( TPrmpt t )
     {
         final Scanner s = new Scanner ( System.in );
-        
         Prompt.PRINT ( _pmsg_get(t) );
         
-        return  s.next().charAt(0);
+        return s.next().charAt(0);
     }
     
     private static String _pmsg_get ( TPrmpt t )
@@ -43,6 +42,7 @@ class UInput implements PromptMessage {
         switch ( t ) {
             case ATTACK_RUN:    return PMSG_ATTACK_RUN;
             case DIRECTIONS:    return PMSG_DIRECTIONS;
+            case KEY_SKILLS:    return PMSG_KEY_SKILLS;
             
             // never happens
             default:            return null;

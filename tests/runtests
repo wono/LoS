@@ -16,6 +16,7 @@
 #       - maps
 #       - monstesrs
 #       - skills
+#       - uinput
 
 COMPILE_FLAG="-sourcepath ../src/ -d ../bin/"
 PATH_TO_LOGS="../tests/logs/"
@@ -25,11 +26,18 @@ function COMPILE ()
     javac ${1}.java $COMPILE_FLAG
 }
 
-function RUN ()
+# with log
+function RUN1()
 {
     cd ../bin/ &&\
     java $1 > ${PATH_TO_LOGS}${1}.log 2>${PATH_TO_LOGS}${1}.err &&\
     cd ../tests
+}
+
+# without log
+function RUN2()
+{
+    cd ../bin/ && java $1 && cd ../tests
 }
 
 function CLEAN ()
@@ -37,23 +45,32 @@ function CLEAN ()
     rm -rf ../bin/*
 }
 
-function RUN_TEST ()
+# with run type 1
+function RUN_TEST1()
 {
-    COMPILE $1 && RUN $1 && CLEAN
+    COMPILE $1 && RUN1 $1 && CLEAN
+}
+
+# with run type 2
+function RUN_TEST2()
+{
+    COMPILE $1 && RUN2 $1 && CLEAN
 }
 
 case ${1} in
-    hero            )   RUN_TEST TestHero           ;;
+    hero            )   RUN_TEST1 TestHero          ;;
 
-    error_handlers  )   RUN_TEST TestErrorHandlers  ;;
+    error_handlers  )   RUN_TEST1 TestErrorHandlers ;;
     
-    items           )   RUN_TEST DemoItems          ;;
+    items           )   RUN_TEST1 DemoItems         ;;
     
-    maps            )   RUN_TEST DemoMaps           ;;
+    maps            )   RUN_TEST1 DemoMaps          ;;
     
-    monsters        )   RUN_TEST TestMonsters       ;;
+    monsters        )   RUN_TEST1 TestMonsters      ;;
     
-    skills          )   RUN_TEST DemoSkills         ;;
+    skills          )   RUN_TEST1 DemoSkills        ;;
+    
+    uinput          )   RUN_TEST2 TestUInput        ;;
                         
     *)  echo $1 is invalid module name for testing. ;;
 esac

@@ -13,7 +13,6 @@ import  static java.lang.System.out;
 import  libraries.RecordPath;
 import  libraries.WXMLParser;
 
-import  skills.Skill;
 import  skills.SkillList;
 
 public class DemoSkills {

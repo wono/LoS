@@ -2,7 +2,7 @@
 ################################################
 #   BASH : RUNTESTS
 #                                                                   #
-#       last modified:  2014/07/11                                  #
+#       last modified:  2014/07/12                                  #
 #       first wrote:    2014/06/17                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
@@ -13,6 +13,7 @@
 #       - hero
 #       - error_handlers
 #       - items
+#       - listdr
 #       - maps
 #       - monstesrs
 #       - skills
@@ -63,6 +64,8 @@ case ${1} in
     error_handlers  )   RUN_TEST1 TestErrorHandlers ;;
     
     items           )   RUN_TEST1 DemoItems         ;;
+    
+    listdr          )   RUN_TEST2 TestListDr        ;;
     
     maps            )   RUN_TEST1 DemoMaps          ;;
     

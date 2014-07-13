@@ -1,12 +1,30 @@
 /* * * * * * * * * * * * * * * * * * * * * * * *        
  *  DEV PROGRESS : UPDATES_BY_WONO IN JULY
  *                                                                  *
- *      last modified:  2014/07/09                                  *
+ *      last modified:  2014/07/12                                  *
  *      first wrote:    2014/07/01                                  *
  *                                                                  *
  *      wono (wonho lim: wono@live.com)                             *
  *                                                                  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
+
+
+2014/07/12
+==========
+-   A static generic funtion 'KEY_USE' is added at 
+    'controllers/Control.java'. This function is used to fire skill 
+    set or item list by getting input as numeric number key from the 
+    user.
+    
+-   File 'controllers/UInput.java' is updated. Now it has a feature 
+    that prompts user input to use skill.
+    
+-   A test file 'TestUInput.java' is added to test file 'UInput.java'.
+
+-   A file 'ListDr.java' is added at 'controllers/'. It is a wrapper 
+    of generic static method that manipulates list of elements such as 
+    skills or items with numeric user input. Its test file 
+    'TestListDr.java' is added too.
 
 
 2014/07/11

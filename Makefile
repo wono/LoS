@@ -2,63 +2,53 @@
 #   MAKEFILE:
 #       A helper program for testing LOS modules                    #
 #                                                                   #
-#       last modified:  2014/07/08                                  #
+#       last modified:  2014/07/15                                  #
 #       first wrote:    2014/06/09                                  #
 #                                                                   #
 #       wono (wonho lim: wono@live.com)                             #
 #                                                                   #
 #####################################################################
 
+RUNTEST =   cd tests && ./runtests $(1)
+
 all:
-	cd tests && ./runtests error_handlers
-	cd tests && ./runtests hero
-	cd tests && ./runtests items	
-	cd tests && ./runtests maps	
-	cd tests && ./runtests monsters
+	$(call RUNTEST, error_handlers)
+	$(call RUNTEST, hero)
+	$(call RUNTEST, items)	
+	$(call RUNTEST, maps)	
+	$(call RUNTEST, monsters)
+	$(call RUNTEST, skills)
 	make view
-
-simulate:
-	cd tests &&\
-	javac Simulator.java -sourcepath ../src -d ../bin
-	cd bin && java Simulator
-	make clean_bin
-
 	
+simulate:
+	$(call RUNTEST, simulate)
+
 test_controllers:
-	cd tests &&\
-	javac TestControllers.java -sourcepath ../src -d ../bin
-	cd bin && java TestControllers
-	make clean_bin
+	$(call RUNTEST, controllers)
 	
 test_error_handlers:
-	cd tests && ./runtests error_handlers
-	make view	
+	$(call RUNTEST, error_handlers)
 
 test_hero:
-	cd tests && ./runtests hero
-	make view
+	$(call RUNTEST, hero)
 
 test_items:
-	cd tests && ./runtests items
-	make view
+	$(call RUNTEST, items)
 
 test_maps:
-	cd tests && ./runtests maps
-	make view
+	$(call RUNTEST, maps)
 	
 test_monsters:
-	cd tests && ./runtests monsters
-	make view
+	$(call RUNTEST, monsters)
 	
 test_skills:
-	cd tests && ./runtests skills
-	make view
+	$(call RUNTEST, skills)
 	
 clean:
-	rm tests/logs/*
+	rm -fr bin/*
 	
-clean_bin:
-	rm -r bin/*
+clean_log:
+	rm -r tests/logs/*
 	
 view:
 	nano -v tests/logs/*

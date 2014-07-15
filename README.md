@@ -1,15 +1,20 @@
+NOTICE: The main purpose of this repository is to experment features
+        related to Java programming such as the latests linguistic 
+        features (Java 8), design patterns, algorithms, file/module 
+        structures, external build tools/scripts, and project 
+        management as a junior programmer's excercise room.
+
 #####################
 # LEGEND OF SILENCE #
 #####################
 
-    last modified:  2014/06/18
+    last modified:  2014/07/14
     first wrote:    2014/06/08
 
-    TheDizzler  (tgillon.music@gmail.com)
-    wono        (wono@live.com)
+    wono (wono@live.com)
 
-Legend Of Silence a pilot verision of simple text-based RPG game for 
-command line interface. 
+Legend Of Silence is a plain Java application that consists of simple 
+text-based RPG game for command line interface and its framework.
 
 How To Play 
 =========== 

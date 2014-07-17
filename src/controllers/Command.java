@@ -29,7 +29,7 @@ public enum Command {
         shortCommand = c;
     }
     
-    publc char getShortCommand ()
+    public char getShortCommand ()
     {
         return shortCommand;
     }

@@ -1,15 +1,8 @@
 #!/bin/bash
-################################################
-#   BASH : RUNTESTS
-#                                                                   #
-#       last modified:  2014/07/12                                  #
-#       first wrote:    2014/06/17                                  #
-#                                                                   #
-#       wono (wonho lim: wono@live.com)                             #
-#                                                                   #
-#####################################################################
+#author Wonho Lim
 
 # $1: Module name to test. Currently available modules are:
+#       - command
 #       - hero
 #       - error_handlers
 #       - items
@@ -59,6 +52,8 @@ function RUN_TEST2()
 }
 
 case ${1} in
+    command         )   RUN_TEST2 TestCommand       ;;
+    
     hero            )   RUN_TEST1 TestHero          ;;
 
     error_handlers  )   RUN_TEST1 TestErrorHandlers ;;

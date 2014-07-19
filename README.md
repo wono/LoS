@@ -8,8 +8,6 @@ excercise room.
 # LEGEND OF SILENCE #
 #####################
 
-    wono (wono@live.com)
-
 Legend Of Silence is a plain Java application that consists of simple 
 text-based RPG game for command line interface and its framework.
 

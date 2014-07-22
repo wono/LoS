@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : ROOM LIST
- *                                                                  *
- *      last modified:  2014/07/03                                  *
- *      first wrote:    2014/07/02                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package maps;
 
 import  java.util.List;
@@ -15,6 +5,9 @@ import  java.util.List;
 import  javax.xml.bind.annotation.XmlElement;
 import  javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ *  @author Wonho Lim
+ */
 @XmlRootElement
 public class RoomList {
 

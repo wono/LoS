@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : HERO
- *                                                                  *
- *      last modified:  2014/06/16                                  *
- *      first wrote:    2014/06/16                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package hero;
 
 /**
@@ -16,6 +6,7 @@ package hero;
  *
  *      Hero hero = Hero.GET ();
  *
+ *  @author Wonho Lim
  */
 public class Hero {
 

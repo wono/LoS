@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : CONTROL
- *                                                                  *
- *      last modified:  2014/07/11                                  *
- *      first wrote:    2014/07/06                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers;
 
 import java.util.List;
@@ -18,6 +8,8 @@ import skills.Skill;
 /**
  *  This is a wrapper of static method to manipulate basic control 
  *  pattern.
+ *
+ *  @author Wonho Lim
  */
 public class Control {
 

@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SKILL BFO
- *                                                                  *
- *      last modified:  2014/06/25                                  *
- *      first wrote:    2014/06/21                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  static java.lang.System.out;
@@ -23,6 +13,8 @@ import  skills.interfaces.SkillName;
  *  For now, each skill returns integer that dosen't mean nothing. 
  *  Later on, it would be modified to return an Object or special type 
  *  to effect something interesting.
+ *
+ *  @author Wonho Lim
  */
 public class SkillBFO   extends     Skill
                         implements  SkillName {

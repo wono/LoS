@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import main.Engine;
 import objects.Pocketable;
 
-
+/**
+ *  @author Wonho Lim
+ */
 public class Inventory extends ArrayList<Pocketable> {
 	
 	

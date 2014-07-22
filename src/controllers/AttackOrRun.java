@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : ATTACKORRUN
- *                                                                  *
- *      last modified:  2014/07/10                                  *
- *      first wrote:    2014/06/18                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers;
 
 import  static java.lang.System.out;
@@ -22,6 +12,8 @@ import  maps.Room;
  *  the outside where imports this class, call the method like this:
  *
  *      AttackOrRun.CTRL ();  
+ *
+ *  @author Wonho Lim
  */
 public class AttackOrRun implements CtrlKeyIndex {
 

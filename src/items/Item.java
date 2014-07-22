@@ -1,17 +1,10 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : ITEM
- *                                                                  *
- *      last modified:  2014/07/01                                  *
- *      first wrote:    2014/07/01                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package items;
 
 import  javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ *  @author Wonho Lim
+ */
 @XmlRootElement ( name = "ItemList" )
 public class Item {
 

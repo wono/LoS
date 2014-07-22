@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : PROMPT
- *                                                                  *
- *      last modified:  2014/06/18                                  *
- *      first wrote:    2014/06/18                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers;
 
 import  static java.lang.System.out;
@@ -20,6 +10,7 @@ import  controllers.interfaces.PromptMessage;
  *
  *      Prompt.PRINT( message );
  *
+ *  @author Wonho Lim
  */
 class Prompt implements PromptMessage {
 

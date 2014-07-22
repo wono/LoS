@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : MTDESCRIPTION
- *                                                                  *
- *      last modified:  2014/06/16                                  *
- *      first wrote:    2014/06/12                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package monsters;
 
 import  error_handlers.EHMessage;
@@ -30,6 +20,8 @@ import  monsters.humans.KnifeMan;
  *      1.  Add descriptions into MTDescriptionInterface
  *      2.  Modify this class's GET() method by adding monster class 
  *          that you created.
+ *
+ *  @author Wonho Lim
  */
 public class MTDescription implements MTDescriptionInterface {
 

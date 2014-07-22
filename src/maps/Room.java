@@ -6,7 +6,6 @@ import  monsters.Monster;
 import  monsters.RandomMonsterGen;
 
 /**
- *
  *  @author T-Dawg, Wonho Lim
  */
 @XmlRootElement ( name = "Map" )

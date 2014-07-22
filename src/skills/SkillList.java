@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SKILL LIST
- *                                                                  *
- *      last modified:  2014/07/11                                  *
- *      first wrote:    2014/07/11                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  java.util.List;
@@ -15,6 +5,9 @@ import  java.util.List;
 import  javax.xml.bind.annotation.XmlElement;
 import  javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ *  @author Wonho Lim
+ */
 @XmlRootElement
 public class SkillList {
 

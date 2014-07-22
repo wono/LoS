@@ -1,19 +1,12 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : MAP1
- *                                                                  *
- *      last modified:  2014/07/06                                  *
- *      first wrote:    2014/07/06                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package maps;
 
 import  java.util.List;
 
 import  maps.types.Relation;
 
+/**
+ *  @author Wonho Lim
+ */
 public class Map1 extends Map {
 
     private static Map1 instance = null;

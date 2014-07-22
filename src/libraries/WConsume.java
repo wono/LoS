@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : WCONSUME
- *                                                                  *
- *      last modified:  2014/07/09                                  *
- *      first wrote:    2014/07/04                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package libraries;
 
 import  java.util.function.Predicate;
@@ -18,6 +8,8 @@ import  java.util.function.Consumer;
  *  the standard functioanl interface - Consumer with other standard 
  *  functional interfaces to simply manipulate codes that have 
  *  particular patterns that can be used by lambda expressions.
+ *
+ *  @author Wonho Lim
  */
 public class WConsume {
 

@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : UINPUT
- *                                                                  *
- *      last modified:  2014/07/02                                  *
- *      first wrote:    2014/06/18                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers;
 
 import  java.util.Scanner;
@@ -23,6 +13,8 @@ import  controllers.types.TPrmpt;
  *
  *  Note that 'message' is String type of message to prompt the user 
  *  input.
+ *
+ *  @author Wonho Lim
  */
 public class UInput implements PromptMessage {
     

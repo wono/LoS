@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : DIRECTION
- *                                                                  *
- *      last modified:  2014/07/09                                  *
- *      first wrote:    2014/06/19                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers;
 
 import  static java.lang.System.out;

@@ -1,19 +1,12 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : RECORD PATH
- *                                                                  *
- *      last modified:  2014/07/02                                  *
- *      first wrote:    2014/07/02                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package libraries;
 
 import  java.net.URI;
 import  java.nio.file.Path;
 import  java.nio.file.Paths;
 
+/**
+ *  @author Wonho Lim
+ */
 public class RecordPath {
 
     /**

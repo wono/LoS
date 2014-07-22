@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SMAP DRIVE
- *                                                                  *
- *      last modified:  2014/06/25                                  *
- *      first wrote:    2014/06/25                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  static java.lang.System.out;
@@ -18,6 +8,8 @@ import  controllers.Key;
 /**
  *  Skill Map driver class. Enables to map a skill with a key board 
  *  key. It will replace SkillMapper class.
+ *
+ *  @author Wonho Lim
  */
 public class SMapDrive {
 

@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SKILL MAPPER
- *                                                                  *
- *      last modified:  2014/06/24                                  *
- *      first wrote:    2014/06/23                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  java.lang.reflect.Method;
@@ -34,6 +24,8 @@ import  java.lang.reflect.InvocationTargetException;
  *      java.lang.IllegalAccessException,
  *      java.lang.NoSuchMethodException,
  *      java.lang.reflect.InvocationTargetException
+ *
+ *  @author Wonho Lim
  */
 public class SkillMapper {
 

@@ -1,19 +1,11 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ENUMERATION : TYPEMONSTER
- *                                                                  *
- *      last modified:  2014/06/10                                  *
- *      first wrote:    2014/06/09                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package monsters;
 
 /**
  *  TypeMonster is used to determine monster type. Monster type may be 
  *  used to design some fun game rules such as different skill effect,
  *  item drops. 
+ *
+ *  @author Wonho Lim
  */
 enum TypeMonster {
 

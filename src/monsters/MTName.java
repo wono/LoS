@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : MTNAME
- *                                                                  *
- *      last modified:  2014/06/15                                  *
- *      first wrote:    2014/06/15                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package monsters;
 
 import  error_handlers.EHMessage;
@@ -26,6 +16,7 @@ import  monsters.humans.KnifeMan;
  *
  *      String name = MTName.GET ( aMonsterInstance );
  *
+ *  @author Wonho Lim
  */
 public class MTName implements MTNameInterface {
 

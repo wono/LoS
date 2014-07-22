@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : MAP
- *                                                                  *
- *      last modified:  2014/07/08                                  *
- *      first wrote:    2014/07/05                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package maps;
 
 import  java.util.List;
@@ -20,6 +10,9 @@ import  maps.Room;
 import  maps.RoomLinker;
 import  maps.RoomList;
 
+/**
+ *  @author Wonho Lim
+ */
 public abstract class Map {
     
     protected String        mapName;

@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : RANDOMMONSTERGEN
- *                                                                  *
- *      last modified:  2014/07/04                                  *
- *      first wrote:    2014/06/10                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package monsters;
 
 import java.util.Random;
@@ -26,6 +16,7 @@ import monsters.humans.KnifeMan;
  *
  *          Monster m = RandomMonsterGen.GET();
  *
+ *  @author Wonho Lim
  */
 public class RandomMonsterGen implements MTIndexInterface {
     

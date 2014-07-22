@@ -1,17 +1,10 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : ROOM LINKER
- *                                                                  *
- *      last modified:  2014/07/03                                  *
- *      first wrote:    2014/07/03                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package maps;
 
 import  maps.types.Relation;
 
+/**
+ *  @author Wonho Lim
+ */
 public class RoomLinker {
 
     /**

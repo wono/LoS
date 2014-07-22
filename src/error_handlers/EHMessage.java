@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : EHMESSAGE
- *                                                                  *
- *      last modified:  2014/06/14                                  *
- *      first wrote:    2014/06/14                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package error_handlers;
 
 import static java.lang.System.err;
@@ -20,6 +10,8 @@ import error_handlers.types.TEHMonsters;
  *  To print out an error meesage, call the static method like this:
  *
  *      EHMessage.PRINT (error_type);
+ *
+ *  @author Wonho Lim
  */
 public class EHMessage implements EHMessageInterface {
 

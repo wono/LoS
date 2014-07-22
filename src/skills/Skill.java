@@ -1,17 +1,10 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, ABSTRACT : SKILL
- *                                                                  *
- *      last modified:  2014/07/11                                  *
- *      first wrote:    2014/06/23                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ *  @author Wonho Lim
+ */
 @XmlRootElement ( name = "SkillList" )
 public class Skill {
 

@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SKILL PHA
- *                                                                  *
- *      last modified:  2014/06/24                                  *
- *      first wrote:    2014/06/21                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills;
 
 import  static java.lang.System.out;
@@ -20,6 +10,8 @@ import  skills.interfaces.SkillName;
  *  imports this class, call the method like this:
  *
  *      SkillPHA.A_SKILL_METHOD_NAME ();
+ * 
+ *  @author Wonho Lim
  */
 public class SkillPHA   extends     Skill 
                         implements  EffectPHA,

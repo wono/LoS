@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, TEST : DEMOSKILLS
- *                                                                  *
- *      last modified:  2014/07/11                                  *
- *      first wrote:    2014/07/11                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  static java.lang.System.out;
 
 import  libraries.RecordPath;

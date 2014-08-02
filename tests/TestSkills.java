@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, TEST : TESTSKILLS
- *                                                                  *
- *      last modified:  2014/06/21                                  *
- *      first wrote:    2014/06/21                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  static java.lang.System.out;
 
 import  skills.SkillBFO;

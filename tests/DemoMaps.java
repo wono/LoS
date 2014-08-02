@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *
- *  JAVA, TEST : DEMO MAPS
- *                                                                  *
- *      last modified:  2014/07/03                                  *
- *      first wrote:    2014/07/02                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  static java.lang.System.out;
 
 import  java.util.List;

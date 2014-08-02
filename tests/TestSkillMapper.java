@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, TEST : SKILL MAPPER
- *                                                                  *
- *      last modified:  2014/06/24                                  *
- *      first wrote:    2014/06/24                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  static java.lang.System.out;
 
 import  java.lang.reflect.Method;

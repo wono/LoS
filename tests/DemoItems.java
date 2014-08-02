@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, TEST : DEMO ITEMS
- *                                                                  *
- *      last modified:  2014/07/03                                  *
- *      first wrote:    2014/07/01                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  static java.lang.System.out;
 
 import  java.util.ArrayList;

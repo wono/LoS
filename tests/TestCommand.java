@@ -2,9 +2,6 @@ import static java.lang.System.out;
 
 import controllers.Command;
 
-/**
- *  @author Wonho Lim
- */
 public class TestCommand {
 
     public static void main (String[] args)

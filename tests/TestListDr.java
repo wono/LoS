@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, TEST : TESTLISTDR
- *                                                                  *
- *      last modified:  2014/07/12                                  *
- *      first wrote:    2014/07/12                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import static java.lang.System.out;
 
 import libraries.WXMLParser;

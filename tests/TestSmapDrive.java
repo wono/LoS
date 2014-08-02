@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : SMAPDRIVE.JAVA
- *                                                                  *
- *      last modified:  2014/06/25                                  *
- *      first wrote:    2014/06/25                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import  java.util.HashMap;
 
 import  controllers.Key;

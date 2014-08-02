@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : TESTHERO
- *                                                                  *
- *      last modified:  2014/06/20                                  *
- *      first wrote:    2014/06/16                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 import static java.lang.System.out;
 
 import hero.Hero;

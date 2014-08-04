@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA : CTRL KEY INDEX
- *                                                                  *
- *      last modified:  2014/06/23                                  *
- *      first wrote:    2014/06/22                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package controllers.interfaces;
 
 /**

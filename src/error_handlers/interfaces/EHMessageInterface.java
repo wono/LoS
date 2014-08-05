@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, INTERFACE : EHMESSAGEINTERFACE
- *                                                                  *
- *      last modified:  2014/06/14                                  *
- *      first wrote:    2014/06/14                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package error_handlers.interfaces;
 
 /**

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+LIBRARY_SOURCE_ROOT="../lib/"
+PATH_TO_BIN="../bin/"
+
+function COMPILE_JAR() {
+    jar cf ${1}.jar $LIBRARY_SOURCE_ROOT${1}/${1}.java
+}
+
+function MOVE_JAR_TO_BIN() {
+    mv ${1}.jar $PATH_TO_BIN
+}
+
+COMPILE_JAR $1 && MOVE_JAR_TO_BIN $1

@@ -1,5 +1,4 @@
 #!/bin/bash
-#author Wonho Lim
 
 # $1: Module name to test. Currently available modules are:
 #       - command
@@ -12,12 +11,14 @@
 #       - skills
 #       - uinput
 
-COMPILE_FLAG="-sourcepath ../src/ -d ../bin/"
+PATH_TO_BIN="../bin/"
+PATH_TO_LIB1="../lib/WXMLParser/"
 PATH_TO_LOGS="../tests/logs/"
+PATH_TO_SRC="../src/"
 
-function COMPILE ()
-{
-    javac ${1}.java $COMPILE_FLAG
+function COMPILE() {
+    javac -sourcepath $PATH_TO_SRC:$PATH_TO_LIB1 \
+        ${1}.java -d $PATH_TO_BIN
 }
 
 # with log

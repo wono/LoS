@@ -1,13 +1,3 @@
-/* * * * * * * * * * * * * * * * * * * * * * * *        
- *  JAVA, INTERFACE : EFFECTPHA
- *                                                                  *
- *      last modified:  2014/06/21                                  *
- *      first wrote:    2014/06/21                                  *
- *                                                                  *
- *      wono (wonho lim: wono@live.com)                             *
- *                                                                  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/
-
 package skills.interfaces;
 
 /**

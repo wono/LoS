@@ -5,8 +5,7 @@ package hero;
  *  instance invoke the method like this:
  *
  *      Hero hero = Hero.GET ();
- *
- *  @author Wonho Lim
+ * 
  */
 public class Hero {
 

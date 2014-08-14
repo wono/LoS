@@ -10,8 +10,7 @@ import error_handlers.types.TEHMonsters;
  *  To print out an error meesage, call the static method like this:
  *
  *      EHMessage.PRINT (error_type);
- *
- *  @author Wonho Lim
+ * 
  */
 public class EHMessage implements EHMessageInterface {
 

@@ -2,9 +2,6 @@ package items;
 
 import  javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *  @author Wonho Lim
- */
 @XmlRootElement ( name = "ItemList" )
 public class Item {
 

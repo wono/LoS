@@ -2,8 +2,6 @@ import  static java.lang.System.out;
 
 import java.util.ArrayList;
 
-import libraries.RecordPath;
-
 import items.Item;
 import items.ItemList;
 
@@ -13,7 +11,7 @@ public class DemoItems {
     {
         ItemList ls
             =   WXMLParser.PULL(
-                    RecordPath.GET("RecordItems"),
+                    RecordPath.GET("../records/RecordItems.xml"),
                     ItemList.class
                 );
 

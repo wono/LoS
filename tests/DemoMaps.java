@@ -2,8 +2,6 @@ import  static java.lang.System.out;
 
 import  java.util.List;
 
-import  libraries.RecordPath;
-
 import  maps.Room;
 import  maps.RoomLinker;
 import  maps.RoomList;
@@ -15,7 +13,7 @@ public class DemoMaps {
     {
         RoomList ls 
             =   WXMLParser.PULL(
-                    RecordPath.GET("RecordMaps"),
+                    RecordPath.GET("../records/RecordMaps.xml"),
                     RoomList.class
                 );
         

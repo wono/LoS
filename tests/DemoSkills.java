@@ -1,7 +1,5 @@
 import  static java.lang.System.out;
 
-import  libraries.RecordPath;
-
 import  skills.SkillList;
 
 public class DemoSkills {
@@ -10,7 +8,7 @@ public class DemoSkills {
     {
         SkillList ls 
             =   WXMLParser.PULL(
-                    RecordPath.GET("RecordSkills"),
+                    RecordPath.GET("../records/RecordSkills.xml"),
                     SkillList.class
                 );
         

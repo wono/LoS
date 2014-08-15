@@ -6,11 +6,10 @@ public class DemoSkills {
 
     public static void main ( String[] args )
     {
-        SkillList ls 
-            =   WXMLParser.PULL(
-                    RecordPath.GET("../records/RecordSkills.xml"),
-                    SkillList.class
-                );
+        SkillList ls = WXMLParser.PULL(
+            "../records/RecordSkills.xml",
+            SkillList.class
+        );
         
         ls.get().stream()
                 .forEach(

@@ -11,12 +11,11 @@ public class DemoMaps {
 
     public static void main ( String[] args )
     {
-        RoomList ls 
-            =   WXMLParser.PULL(
-                    RecordPath.GET("../records/RecordMaps.xml"),
-                    RoomList.class
-                );
-        
+        RoomList ls = WXMLParser.PULL(
+            "../records/RecordMaps.xml",
+            RoomList.class
+        );
+                
         setRooms(ls.get());
         
         ls.get().stream()

@@ -1,9 +1,9 @@
 package maps;
 
-import  javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
-import  monsters.Monster;
-import  monsters.RandomMonsterGen;
+import monsters.Monster;
+import monsters.RandomMonsterGen;
 
 /**
  *  @author Wonho Lim

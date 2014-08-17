@@ -6,7 +6,7 @@ import  monsters.Monster;
 import  monsters.RandomMonsterGen;
 
 /**
- *  @author T-Dawg, Wonho Lim
+ *  @author Wonho Lim
  */
 @XmlRootElement ( name = "Map" )
 public class Room {

@@ -3,7 +3,6 @@ package maps;
 import  java.util.List;
 
 import  libraries.RecordPath;
-import  libraries.WXMLParser;
 
 import  maps.types.Relation;
 import  maps.Room;

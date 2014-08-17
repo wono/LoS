@@ -2,8 +2,6 @@ package maps;
 
 import  java.util.List;
 
-import  libraries.RecordPath;
-
 import  maps.types.Relation;
 import  maps.Room;
 import  maps.RoomLinker;

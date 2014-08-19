@@ -13,11 +13,12 @@
 
 PATH_TO_BIN="../bin/"
 PATH_TO_LIB1="../lib/WXMLParser/"
+PATH_TO_LIB2="../lib/WConsume/"
 PATH_TO_LOGS="../tests/logs/"
 PATH_TO_SRC="../src/"
 
 function COMPILE() {
-    javac -sourcepath $PATH_TO_SRC:$PATH_TO_LIB1 \
+    javac -sourcepath $PATH_TO_SRC:$PATH_TO_LIB1:PATH_TO_LIB2 \
         ${1}.java -d $PATH_TO_BIN
 }
 

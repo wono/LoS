@@ -1,3 +1,6 @@
 [submodule "lib/WXMLParser"]
 	path = lib/WXMLParser
 	url = https://github.com/wono/WXMLParser
+[submodule "lib/WConsume"]
+	path = lib/WConsume
+	url = http://github.com/wono/WConsume

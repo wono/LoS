@@ -3,8 +3,6 @@ import  static java.lang.System.out;
 import  java.util.ArrayList;
 import  java.util.List;
 
-import  libraries.WConsume;
-
 import  controllers.AttackOrRun;
 import  controllers.Direction;
 import  maps.Map1;

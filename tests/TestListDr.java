@@ -1,8 +1,5 @@
 import static java.lang.System.out;
 
-import libraries.WXMLParser;
-import libraries.RecordPath;
-
 import controllers.ListDr;
 import skills.Skill;
 import skills.SkillList;

@@ -1,13 +1,13 @@
 package monsters;
 
-import  error_handlers.EHMessage;
-import  error_handlers.types.TEHMonsters;
+import error_handlers.EHMessage;
+import error_handlers.types.TEHMonsters;
 
-import  monsters.interfaces.MTDescriptionInterface;
-import  monsters.animals.GiantDuck;
-import  monsters.animals.SquirrelGold;
-import  monsters.humans.GunMan;
-import  monsters.humans.KnifeMan;
+import monsters.interfaces.MTDescriptionInterface;
+import monsters.animals.GiantDuck;
+import monsters.animals.SquirrelGold;
+import monsters.humans.GunMan;
+import monsters.humans.KnifeMan;
 
 /**
  *  Monster description handler. Notice that the method to get 

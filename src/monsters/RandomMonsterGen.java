@@ -10,11 +10,11 @@ import monsters.humans.GunMan;
 import monsters.humans.KnifeMan;
 
 /**
- * Randomized Monster instance generator. Notice that the generator
- * method is static - no need initilization. Within any class 
- * out here, which imports this class, call it like this:  
+ *  Randomized Monster instance generator. Notice that the generator
+ *  method is static - no need initilization. Within any class 
+ *  out here, which imports this class, call it like this:  
  *
- *          Monster m = RandomMonsterGen.GET();
+ *      Monster m = RandomMonsterGen.GET();
  *
  *  @author Wonho Lim
  */
